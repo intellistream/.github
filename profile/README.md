@@ -1,5 +1,7 @@
 # IntelliStream Research Group
 
+[![Total Stars](https://img.shields.io/github/stars/intellistream?style=social&label=Total%20Stars)](https://github.com/intellistream)
+
 <div align="center">
 
 [![Website](https://img.shields.io/badge/Website-intellistream.github.io-blue?style=flat&logo=github)](https://intellistream.github.io)
@@ -165,6 +167,22 @@ SAGE 框架的示例代码和使用案例集合。
 
 </td>
 </tr>
+<tr>
+<td width="50%">
+
+#### 🧩 [neuromem](https://github.com/intellistream/neuromem)
+
+**记忆管理引擎 | Memory Management Engine**
+
+SAGE 项目的记忆体组件，RAG 应用的独立内存管理引擎。
+
+*Memory component of the SAGE project, a standalone memory management engine for RAG applications.*
+
+</td>
+<td width="50%">
+
+</td>
+</tr>
 </table>
 
 ### 🗄️ 历史仓库 | Historical Repositories
@@ -189,7 +207,6 @@ SAGE 框架的示例代码和使用案例集合。
 ### 机器学习与AI | Machine Learning & AI
 
 - **[SentiStream](https://github.com/intellistream/SentiStream)** ⭐ 7 - 情感分析流处理 | Sentiment analysis stream processing
-- **[neuromem](https://github.com/intellistream/neuromem)** - RAG 应用的独立内存管理引擎 | Standalone memory management engine for RAG applications
 - **[StreamLearning](https://github.com/intellistream/StreamLearning)** - 流式学习框架 | Stream learning framework
 
 ### 资源与文档 | Resources & Documentation
