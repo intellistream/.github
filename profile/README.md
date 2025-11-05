@@ -204,26 +204,35 @@ SAGE 框架的示例代码和使用案例集合。
 ### 安装 SAGE | Install SAGE
 
 ```bash
-pip install isage
+# 标准安装 | Standard installation (recommended)
+pip install isage[standard]
+
+# 核心安装 | Core installation only
+pip install isage[core]
 ```
 
 ### 简单示例 | Simple Example
 
 ```python
-from sage import Pipeline, Node
+from sage.kernel.api.local_environment import LocalEnvironment
+from sage.libs.io.source import FileSource
+from sage.middleware.operators.rag import DenseRetriever, QAPromptor, OpenAIGenerator
+from sage.libs.io.sink import TerminalSink
 
-# 创建 SAGE 数据流管道 | Create SAGE dataflow pipeline
-pipeline = Pipeline()
+# 创建执行环境 | Create execution environment
+env = LocalEnvironment("rag_pipeline")
 
-# 定义处理节点 | Define processing nodes
-retriever = Node("retriever", ...)
-llm = Node("llm", ...)
+# 构建声明式管道 | Build declarative pipeline
+(
+    env.from_source(FileSource, {"file_path": "questions.txt"})
+    .map(DenseRetriever, {"model": "sentence-transformers/all-MiniLM-L6-v2"})
+    .map(QAPromptor, {"template": "Answer based on: {context}\nQ: {query}\nA:"})
+    .map(OpenAIGenerator, {"model": "gpt-3.5-turbo"})
+    .sink(TerminalSink)
+)
 
-# 组合管道 | Compose pipeline
-pipeline.add_edge(retriever, llm)
-
-# 执行 | Execute
-result = pipeline.run(query="你的问题")
+# 执行管道 | Execute pipeline
+env.submit()
 ```
 
 详细文档请访问：[SAGE Documentation](https://intellistream.github.io/SAGE-Pub/)
