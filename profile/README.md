@@ -181,6 +181,45 @@ SAGE 项目的记忆体组件，RAG 应用的独立内存管理引擎。
 </td>
 <td width="50%">
 
+#### 📊 [sageData](https://github.com/intellistream/sageData)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+
+**基准数据集 | Benchmark Datasets**
+
+SAGE 基准测试的共享数据集和资源库。
+
+*Shared test datasets and resources for SAGE benchmarks.*
+
+</td>
+</tr>
+</table>
+
+### 🧮 算法库 | Algorithm Libraries
+
+<table>
+<tr>
+<td width="50%">
+
+#### 🔢 [LibAMM](https://github.com/intellistream/LibAMM)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+[![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/)
+[![GitHub Stars](https://img.shields.io/github/stars/intellistream/LibAMM?style=social)](https://github.com/intellistream/LibAMM/stargazers)
+
+**近似矩阵乘法库 | Approximate Matrix Multiplication Library**
+
+聚合了主流 AMM 算法的高性能库，支持标准化评估和高效实验管理，兼容 LibTorch (C++)。
+
+*Aggregates prevalent AMM algorithms for standardized evaluations and efficient experiment management, compatible with LibTorch (C++).*
+
+**特性 | Features:**
+- 🚀 高性能 C++ 实现
+- 🐍 Python 绑定 (PyAMM)
+- 🔥 可选 CUDA 加速支持
+- 📊 PAPI 性能分析工具
+
+</td>
+<td width="50%">
+
 </td>
 </tr>
 </table>
