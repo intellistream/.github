@@ -181,6 +181,110 @@ SAGE 项目的记忆体组件，RAG 应用的独立内存管理引擎。
 </td>
 <td width="50%">
 
+#### 📊 [sageData](https://github.com/intellistream/sageData)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+
+**基准数据集 | Benchmark Datasets**
+
+SAGE 基准测试的共享数据集和资源库。
+
+*Shared test datasets and resources for SAGE benchmarks.*
+
+</td>
+</tr>
+</table>
+
+### 🧮 算法库 | Algorithm Libraries
+
+<table>
+<tr>
+<td width="50%">
+
+#### 🔢 [LibAMM](https://github.com/intellistream/LibAMM)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+[![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/)
+[![GitHub Stars](https://img.shields.io/github/stars/intellistream/LibAMM?style=social)](https://github.com/intellistream/LibAMM/stargazers)
+
+**近似矩阵乘法库 | Approximate Matrix Multiplication Library**
+
+聚合了主流 AMM 算法的高性能库，支持标准化评估和高效实验管理，兼容 LibTorch (C++)。
+
+*Aggregates prevalent AMM algorithms for standardized evaluations and efficient experiment management, compatible with LibTorch (C++).*
+
+**特性 | Features:**
+- 🚀 高性能 C++ 实现
+- 🐍 Python 绑定 (PyAMM)
+- 🔥 可选 CUDA 加速支持
+- 📊 PAPI 性能分析工具
+
+</td>
+<td width="50%">
+
+#### 🔍 [hnswlib](https://github.com/intellistream/hnswlib)
+[![C++](https://img.shields.io/badge/C%2B%2B-11-blue.svg)](https://isocpp.org/)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+
+**HNSW 近似最近邻搜索库 | HNSW Approximate Nearest Neighbor Search**
+
+头文件库，实现 HNSW 算法的快速近似最近邻搜索，支持 C++ 和 Python 绑定。
+
+*Header-only C++ HNSW implementation with Python bindings for fast approximate nearest neighbor search.*
+
+**特性 | Features:**
+- 📦 头文件库，无依赖
+- ⚡ 增量索引构建
+- 🔄 支持元素更新和删除
+- 🐍 可 pickle 的 Python 索引
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### ⚡ [Concurrent-HNSW](https://github.com/intellistream/Concurrent-HNSW)
+[![C++](https://img.shields.io/badge/C%2B%2B-latest-blue.svg)](https://isocpp.org/)
+
+**并发 HNSW 库 | Concurrent HNSW Library**
+
+支持并发操作的 HNSW 实现，提供快速并发的近似最近邻搜索。
+
+*Header-only C++/Python library for fast and concurrent approximate nearest neighbor search.*
+
+**状态 | Status:** 🚧 开发中 | In Development
+
+</td>
+<td width="50%">
+
+#### 🔗 [Parlay-HNSW](https://github.com/intellistream/Parlay-HNSW)
+[![C++](https://img.shields.io/badge/C%2B%2B-latest-blue.svg)](https://isocpp.org/)
+
+**Parlay-HNSW 基线 | Parlay-HNSW Baseline**
+
+基于 Parlay 框架的 HNSW 实现，作为 ConcurrentHNSW 的基线。
+
+*Parlay-based HNSW implementation serving as baseline for ConcurrentHNSW.*
+
+**状态 | Status:** 🚧 开发中 | In Development
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 💿 [IP-DiskANN](https://github.com/intellistream/IP-DiskANN)
+[![C++](https://img.shields.io/badge/C%2B%2B-latest-blue.svg)](https://isocpp.org/)
+
+**内积 DiskANN 实现 | Inner Product DiskANN**
+
+基于图结构的可扩展、快速、新鲜和过滤的近似最近邻搜索索引实现。
+
+*UNOFFICIAL implementation of IP-DiskANN: Graph-structured indices for scalable, fast, fresh and filtered approximate nearest neighbor search.*
+
+**状态 | Status:** 🚧 待集成 | To Be Integrated
+
+</td>
+<td width="50%">
+
 </td>
 </tr>
 </table>
