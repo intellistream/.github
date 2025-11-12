@@ -1,6 +1,6 @@
 # IntelliStream Research Group
 
-[![Total Stars](https://img.shields.io/github/stars/intellistream?style=social&label=Total%20Stars)](https://github.com/intellistream)
+[![Total Stars](https://img.shields.io/github/stars/intellistream?style=flat&logo=github&label=Total%20Stars)](https://github.com/intellistream)
 
 <div align="center">
 
@@ -28,7 +28,7 @@ SAGE (Streaming-Augmented Generative Execution) 是一个高性能、模块化�
 <td width="50%">
 
 #### 🎯 [SAGE](https://github.com/intellistream/SAGE)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/SAGE?style=social)](https://github.com/intellistream/SAGE/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/intellistream/SAGE?style=flat&logo=github)](https://github.com/intellistream/SAGE/stargazers)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
 
 **主框架 | Main Framework**
@@ -48,7 +48,7 @@ SAGE (Streaming-Augmented Generative Execution) 是一个高性能、模块化�
 
 #### 📚 [SAGE-Pub](https://github.com/intellistream/SAGE-Pub)
 [![Documentation](https://img.shields.io/badge/docs-online-brightgreen)](https://intellistream.github.io/SAGE-Pub/)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/SAGE-Pub?style=social)](https://github.com/intellistream/SAGE-Pub/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/intellistream/SAGE-Pub?style=flat&logo=github)](https://github.com/intellistream/SAGE-Pub/stargazers)
 
 **文档中心 | Documentation Hub**
 
@@ -74,7 +74,7 @@ SAGE 系统的官方对外文档仓库，包含快速开始、架构图、API �
 
 #### 💾 [sageDB](https://github.com/intellistream/sageDB)
 [![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sageDB?style=social)](https://github.com/intellistream/sageDB/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sageDB?style=flat&logo=github)](https://github.com/intellistream/sageDB/stargazers)
 
 **向量数据库核心 | Vector Database Core**
 
@@ -94,7 +94,7 @@ SAGE 系统的官方对外文档仓库，包含快速开始、架构图、API �
 
 #### 🌊 [sageFlow](https://github.com/intellistream/sageFlow)
 [![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sageFlow?style=social)](https://github.com/intellistream/sageFlow/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sageFlow?style=flat&logo=github)](https://github.com/intellistream/sageFlow/stargazers)
 
 **向量流处理引擎 | Vector Stream Processing Engine**
 
@@ -127,7 +127,7 @@ SAGE 生态系统的时序数据库组件，用于处理时间序列数据。
 
 #### 🧪 [SAGE-DB-Bench](https://github.com/intellistream/SAGE-DB-Bench)
 [![C++](https://img.shields.io/badge/C%2B%2B-latest-blue.svg)](https://isocpp.org/)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/SAGE-DB-Bench?style=social)](https://github.com/intellistream/SAGE-DB-Bench/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/intellistream/SAGE-DB-Bench?style=flat&logo=github)](https://github.com/intellistream/SAGE-DB-Bench/stargazers)
 
 **数据库基准测试 | Database Benchmark**
 
@@ -203,7 +203,7 @@ SAGE 基准测试的共享数据集和资源库。
 #### 🔢 [LibAMM](https://github.com/intellistream/LibAMM)
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
 [![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/LibAMM?style=social)](https://github.com/intellistream/LibAMM/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/intellistream/LibAMM?style=flat&logo=github)](https://github.com/intellistream/LibAMM/stargazers)
 
 **近似矩阵乘法库 | Approximate Matrix Multiplication Library**
 
