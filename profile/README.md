@@ -220,27 +220,6 @@ SAGE 基准测试的共享数据集和资源库。
 </td>
 <td width="50%">
 
-#### 🔍 [hnswlib](https://github.com/intellistream/hnswlib)
-[![C++](https://img.shields.io/badge/C%2B%2B-11-blue.svg)](https://isocpp.org/)
-[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
-
-**HNSW 近似最近邻搜索库 | HNSW Approximate Nearest Neighbor Search**
-
-头文件库，实现 HNSW 算法的快速近似最近邻搜索，支持 C++ 和 Python 绑定。
-
-*Header-only C++ HNSW implementation with Python bindings for fast approximate nearest neighbor search.*
-
-**特性 | Features:**
-- 📦 头文件库，无依赖
-- ⚡ 增量索引构建
-- 🔄 支持元素更新和删除
-- 🐍 可 pickle 的 Python 索引
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
 #### ⚡ [Concurrent-HNSW](https://github.com/intellistream/Concurrent-HNSW)
 [![C++](https://img.shields.io/badge/C%2B%2B-latest-blue.svg)](https://isocpp.org/)
 
@@ -255,40 +234,6 @@ SAGE 基准测试的共享数据集和资源库。
 </td>
 <td width="50%">
 
-#### 🔗 [Parlay-HNSW](https://github.com/intellistream/Parlay-HNSW)
-[![C++](https://img.shields.io/badge/C%2B%2B-latest-blue.svg)](https://isocpp.org/)
-
-**Parlay-HNSW 基线 | Parlay-HNSW Baseline**
-
-基于 Parlay 框架的 HNSW 实现，作为 ConcurrentHNSW 的基线。
-
-*Parlay-based HNSW implementation serving as baseline for ConcurrentHNSW.*
-
-**状态 | Status:** 🚧 开发中 | In Development
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### 💿 [IP-DiskANN](https://github.com/intellistream/IP-DiskANN)
-[![C++](https://img.shields.io/badge/C%2B%2B-latest-blue.svg)](https://isocpp.org/)
-
-**内积 DiskANN 实现 | Inner Product DiskANN**
-
-基于图结构的可扩展、快速、新鲜和过滤的近似最近邻搜索索引实现。
-
-*UNOFFICIAL implementation of IP-DiskANN: Graph-structured indices for scalable, fast, fresh and filtered approximate nearest neighbor search.*
-
-**状态 | Status:** 🚧 待集成 | To Be Integrated
-
-</td>
-<td width="50%">
-
-</td>
-</tr>
-</table>
-
 ### 🗄️ 历史仓库 | Historical Repositories
 
 - **[sage-db_outdated](https://github.com/intellistream/sage-db_outdated)** - SAGE 数据库的早期版本（已过时）| Early version of SAGE database (outdated)
@@ -299,18 +244,17 @@ SAGE 基准测试的共享数据集和资源库。
 
 ### 流处理系统 | Stream Processing Systems
 
-- **[MorphStream](https://github.com/intellistream/MorphStream)** ⭐ 141 - 可扩展的事务性流处理引擎 | Scalable transactional stream processing engine
-- **[Sesame](https://github.com/intellistream/Sesame)** ⭐ 26 - [SIGMOD'23] 数据流聚类实证研究 | Data stream clustering empirical study
-- **[AllianceDB](https://github.com/intellistream/AllianceDB)** ⭐ 16 - 分布式数据库系统 | Distributed database system
+- **[MorphStream](https://github.com/intellistream/MorphStream)** ⭐ 141 - [ICDE'20, SIGMOD'23, TKDE'24] 可扩展的事务性流处理引擎 | Scalable transactional stream processing engine
+- **[AllianceDB](https://github.com/intellistream/AllianceDB)** ⭐ 16 - [SIGMOD'21] 并行数据库系统 | Parallel database system
 
 ### 基准测试与工具 | Benchmarks & Tools
 
-- **[CANDOR-Benchmark](https://github.com/intellistream/CANDOR-Benchmark)** ⭐ 25 - 性能基准测试套件 | Performance benchmark suite
+- **[Sesame](https://github.com/intellistream/Sesame)** ⭐ 26 - [SIGMOD'23] 数据流聚类实证研究 | Data stream clustering empirical study
 - **[PDSC](https://github.com/intellistream/PDSC)** - 并行数据流聚类基准 | Parallel data stream clustering benchmark
 
 ### 机器学习与AI | Machine Learning & AI
 
-- **[SentiStream](https://github.com/intellistream/SentiStream)** ⭐ 7 - 情感分析流处理 | Sentiment analysis stream processing
+- **[SentiStream](https://github.com/intellistream/SentiStream)** ⭐ 7 - [EMENLP'23] 情感分析流处理 | Sentiment analysis stream processing
 - **[StreamLearning](https://github.com/intellistream/StreamLearning)** - 流式学习框架 | Stream learning framework
 
 ### 资源与文档 | Resources & Documentation
