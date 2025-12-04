@@ -129,7 +129,7 @@ SAGE 生态系统的时序数据库组件，用于处理时间序列数据。
 [![C++](https://img.shields.io/badge/C%2B%2B-latest-blue.svg)](https://isocpp.org/)
 [![GitHub Stars](https://img.shields.io/github/stars/intellistream/SAGE-DB-Bench?style=flat&logo=github)](https://github.com/intellistream/SAGE-DB-Bench/stargazers)
 
-**数据库基准测试 | Database Benchmark**
+**数据库基准测试 | Database Benchmark [SIGMOD'26]**
 
 SAGE 数据库组件的性能基准测试套件。
 
@@ -205,7 +205,7 @@ SAGE 基准测试的共享数据集和资源库。
 [![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/)
 [![GitHub Stars](https://img.shields.io/github/stars/intellistream/LibAMM?style=flat&logo=github)](https://github.com/intellistream/LibAMM/stargazers)
 
-**近似矩阵乘法库 | Approximate Matrix Multiplication Library**
+**近似矩阵乘法库 | Approximate Matrix Multiplication Library [NIPS'24]**
 
 聚合了主流 AMM 算法的高性能库，支持标准化评估和高效实验管理，兼容 LibTorch (C++)。
 
@@ -235,6 +235,7 @@ SAGE 基准测试的共享数据集和资源库。
 <td width="50%">
 </tr>
 </table>
+
 ### 🗄️ 历史仓库 | Historical Repositories
 
 - **[sage-db_outdated](https://github.com/intellistream/sage-db_outdated)** - SAGE 数据库的早期版本（已过时）| Early version of SAGE database (outdated)
