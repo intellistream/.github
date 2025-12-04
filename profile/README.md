@@ -233,7 +233,8 @@ SAGE 基准测试的共享数据集和资源库。
 
 </td>
 <td width="50%">
-
+</tr>
+</table>
 ### 🗄️ 历史仓库 | Historical Repositories
 
 - **[sage-db_outdated](https://github.com/intellistream/sage-db_outdated)** - SAGE 数据库的早期版本（已过时）| Early version of SAGE database (outdated)
