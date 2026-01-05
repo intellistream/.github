@@ -137,6 +137,22 @@ SAGE 数据库组件的性能基准测试套件。
 
 </td>
 </tr>
+<tr>
+<td width="50%">
+
+#### 📊 [sage-benchmark](https://github.com/intellistream/sage-benchmark)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+
+**SAGE 基准测试套件 | SAGE Benchmark Suite**
+
+全面的 AI 数据处理管道评估框架。
+
+*Comprehensive evaluation framework for AI data processing pipelines.*
+
+</td>
+<td width="50%">
+</td>
+</tr>
 </table>
 
 ### 🤖 AI 组件 | AI Components
@@ -192,6 +208,22 @@ SAGE 基准测试的共享数据集和资源库。
 
 </td>
 </tr>
+<tr>
+<td width="50%">
+
+#### 🤏 [sageRefiner](https://github.com/intellistream/sageRefiner)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+
+**RAG 上下文压缩 | RAG Context Compression**
+
+SAGE 生态系统的上下文压缩组件，用于优化 RAG 应用的输入长度。
+
+*Context compression component for the SAGE ecosystem, optimizing input length for RAG applications.*
+
+</td>
+<td width="50%">
+</td>
+</tr>
 </table>
 
 ### 🧮 算法库 | Algorithm Libraries
@@ -236,7 +268,28 @@ SAGE 基准测试的共享数据集和资源库。
 </tr>
 </table>
 
-### 🗄️ 历史仓库 | Historical Repositories
+### �️ 工具与基础设施 | Tools & Infrastructure
+
+<table>
+<tr>
+<td width="50%">
+
+#### 📦 [sage-pypi-publisher](https://github.com/intellistream/sage-pypi-publisher)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+
+**PyPI 发布工具 | PyPI Publisher Toolkit**
+
+Python monorepos 的字节码编译与 PyPI 发布工具。
+
+*Bytecode compiler and PyPI publisher toolkit for Python monorepos.*
+
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+
+### �🗄️ 历史仓库 | Historical Repositories
 
 - **[sage-db_outdated](https://github.com/intellistream/sage-db_outdated)** - SAGE 数据库的早期版本（已过时）| Early version of SAGE database (outdated)
 
