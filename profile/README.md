@@ -72,9 +72,9 @@ SAGE 系统的官方对外文档仓库，包含快速开始、架构图、API �
 <tr>
 <td width="50%">
 
-#### 💾 [sageDB](https://github.com/intellistream/sageDB)
+#### 💾 [sageVDB](https://github.com/intellistream/sageVDB)
 [![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sageDB?style=flat&logo=github)](https://github.com/intellistream/sageDB/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sageVDB?style=flat&logo=github)](https://github.com/intellistream/sageVDB/stargazers)
 
 **向量数据库核心 | Vector Database Core**
 
@@ -125,9 +125,9 @@ SAGE 生态系统的时序数据库组件，用于处理时间序列数据。
 </td>
 <td width="50%">
 
-#### 🧪 [SAGE-DB-Bench](https://github.com/intellistream/SAGE-DB-Bench)
+#### 🧪 [CANDOR-Bench](https://github.com/intellistream/CANDOR-Bench)
 [![C++](https://img.shields.io/badge/C%2B%2B-latest-blue.svg)](https://isocpp.org/)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/SAGE-DB-Bench?style=flat&logo=github)](https://github.com/intellistream/SAGE-DB-Bench/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/intellistream/CANDOR-Bench?style=flat&logo=github)](https://github.com/intellistream/CANDOR-Bench/stargazers)
 
 **数据库基准测试 | Database Benchmark [SIGMOD'26]**
 
