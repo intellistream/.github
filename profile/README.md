@@ -161,6 +161,18 @@ SAGE 数据库组件的性能基准测试套件。
 <tr>
 <td width="50%">
 
+#### 🧠 [sageLLM](https://github.com/intellistream/sageLLM)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+
+**LLM 集成模块 | LLM Integration Module**
+
+SAGE 生态系统的大语言模型集成组件，提供统一的 LLM 接口。
+
+*Large Language Model integration component for the SAGE ecosystem, providing unified LLM interfaces.*
+
+</td>
+<td width="50%">
+
 #### 📖 [sage-examples](https://github.com/intellistream/sage-examples)
 
 **示例代码库 | Examples Repository**
@@ -170,6 +182,8 @@ SAGE 框架的示例代码和使用案例集合。
 *Collection of example code and use cases for the SAGE framework.*
 
 </td>
+</tr>
+<tr>
 <td width="50%">
 
 #### 🧩 [neuromem](https://github.com/intellistream/neuromem)
