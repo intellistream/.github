@@ -72,9 +72,9 @@ SAGE 系统的官方对外文档仓库，包含快速开始、架构图、API �
 <tr>
 <td width="50%">
 
-#### 💾 [sageDB](https://github.com/intellistream/sageDB)
+#### 💾 [sageVDB](https://github.com/intellistream/sageVDB)
 [![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sageDB?style=flat&logo=github)](https://github.com/intellistream/sageDB/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sageVDB?style=flat&logo=github)](https://github.com/intellistream/sageVDB/stargazers)
 
 **向量数据库核心 | Vector Database Core**
 
@@ -125,9 +125,9 @@ SAGE 生态系统的时序数据库组件，用于处理时间序列数据。
 </td>
 <td width="50%">
 
-#### 🧪 [SAGE-DB-Bench](https://github.com/intellistream/SAGE-DB-Bench)
+#### 🧪 [CANDOR-Bench](https://github.com/intellistream/CANDOR-Bench)
 [![C++](https://img.shields.io/badge/C%2B%2B-latest-blue.svg)](https://isocpp.org/)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/SAGE-DB-Bench?style=flat&logo=github)](https://github.com/intellistream/SAGE-DB-Bench/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/intellistream/CANDOR-Bench?style=flat&logo=github)](https://github.com/intellistream/CANDOR-Bench/stargazers)
 
 **数据库基准测试 | Database Benchmark [SIGMOD'26]**
 
@@ -195,6 +195,8 @@ SAGE 项目的记忆体组件，RAG 应用的独立内存管理引擎。
 *Memory component of the SAGE project, a standalone memory management engine for RAG applications.*
 
 </td>
+</tr>
+<tr>
 <td width="50%">
 
 #### 📊 [sageData](https://github.com/intellistream/sageData)
@@ -207,8 +209,6 @@ SAGE 基准测试的共享数据集和资源库。
 *Shared test datasets and resources for SAGE benchmarks.*
 
 </td>
-</tr>
-<tr>
 <td width="50%">
 
 #### 🤏 [sageRefiner](https://github.com/intellistream/sageRefiner)
@@ -220,8 +220,6 @@ SAGE 生态系统的上下文压缩组件，用于优化 RAG 应用的输入长�
 
 *Context compression component for the SAGE ecosystem, optimizing input length for RAG applications.*
 
-</td>
-<td width="50%">
 </td>
 </tr>
 </table>
@@ -264,7 +262,24 @@ SAGE 生态系统的上下文压缩组件，用于优化 RAG 应用的输入长�
 **状态 | Status:** 🚧 开发中 | In Development
 
 </td>
+</tr>
+<tr>
 <td width="50%">
+
+#### 🔍 [sage-anns](https://github.com/intellistream/sage-anns)
+[![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-anns?style=flat&logo=github)](https://github.com/intellistream/sage-anns/stargazers)
+
+**近似最近邻搜索算法库 | ANNS Algorithm Library**
+
+提供统一 Python 接口的近似最近邻搜索算法集合，支持多种 ANNS 算法。
+
+*SAGE ANNS: Approximate Nearest Neighbor Search algorithms with unified Python interface.*
+
+</td>
+<td width="50%">
+</td>
 </tr>
 </table>
 
@@ -282,6 +297,34 @@ SAGE 生态系统的上下文压缩组件，用于优化 RAG 应用的输入长�
 Python monorepos 的字节码编译与 PyPI 发布工具。
 
 *Bytecode compiler and PyPI publisher toolkit for Python monorepos.*
+
+</td>
+<td width="50%">
+
+#### 🌐 [sage-edge](https://github.com/intellistream/sage-edge)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-edge?style=flat&logo=github)](https://github.com/intellistream/sage-edge/stargazers)
+
+**SAGE 网关聚合器 | SAGE Gateway Aggregator**
+
+轻量级 FastAPI 网关聚合器，为 SAGE 提供统一的 API 入口。
+
+*Lightweight FastAPI aggregator for SAGE Gateway.*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 🐙 [sage-github-manager](https://github.com/intellistream/sage-github-manager)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-github-manager?style=flat&logo=github)](https://github.com/intellistream/sage-github-manager/stargazers)
+
+**GitHub 问题管理工具 | GitHub Issues Manager**
+
+SAGE 项目的 GitHub Issues 管理工具，具有 AI 增强功能。
+
+*A comprehensive GitHub Issues management tool for SAGE project with AI-powered features.*
 
 </td>
 <td width="50%">
