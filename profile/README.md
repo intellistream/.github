@@ -15,6 +15,86 @@
 
 ---
 
+## 📚 SAGE 全仓库清单（含私有） | SAGE Full Repository Index (Including Private)
+
+> 说明：🔒 表示私有仓库（需组织权限）。
+
+### 🧭 核心与平台 | Core & Platform
+- [SAGE](https://github.com/intellistream/SAGE)
+- [SAGE-Pub](https://github.com/intellistream/SAGE-Pub)
+- [sage-edge](https://github.com/intellistream/sage-edge)
+- [sage-studio](https://github.com/intellistream/sage-studio)
+- [sage-agentic](https://github.com/intellistream/sage-agentic)
+- [sage-github-manager](https://github.com/intellistream/sage-github-manager)
+- [sage-pypi-publisher](https://github.com/intellistream/sage-pypi-publisher)
+- [sage-examples](https://github.com/intellistream/sage-examples)
+
+### 🗄️ 数据库与系统 | Databases & Systems
+- [sageVDB](https://github.com/intellistream/sageVDB)
+- [sageFlow](https://github.com/intellistream/sageFlow)
+- [sageTSDB](https://github.com/intellistream/sageTSDB)
+- [sageData](https://github.com/intellistream/sageData)
+- [sageRefiner](https://github.com/intellistream/sageRefiner)
+- 🔒 [sageFlownet](https://github.com/intellistream/sageFlownet)
+
+### 🤖 AI 与 RAG | AI & RAG
+- [sage-intent](https://github.com/intellistream/sage-intent)
+- [sage-finetune](https://github.com/intellistream/sage-finetune)
+- 🔒 [sage-rag](https://github.com/intellistream/sage-rag)
+
+### 🧮 算法库 | Algorithm Libraries
+- [sage-anns](https://github.com/intellistream/sage-anns)
+- [sage-amms](https://github.com/intellistream/sage-amms)
+- [sage-sias](https://github.com/intellistream/sage-sias)
+
+### 📊 评测与基准 | Evaluation & Benchmarks
+- [sage-benchmark](https://github.com/intellistream/sage-benchmark)
+- [sage-benchmark-agent](https://github.com/intellistream/sage-benchmark-agent)
+- 🔒 [sage-eval](https://github.com/intellistream/sage-eval)
+
+### 🛡️ 安全与隐私 | Safety & Privacy
+- 🔒 [sage-safety](https://github.com/intellistream/sage-safety)
+- 🔒 [sage-privacy](https://github.com/intellistream/sage-privacy)
+
+### 🔒 内部与管理 | Internal
+- 🔒 [sage-team-info](https://github.com/intellistream/sage-team-info)
+
+---
+
+## 🧠 sageLLM 全仓库清单（含私有） | sageLLM Full Repository Index (Including Private)
+
+> 说明：🔒 表示私有仓库（需组织权限）。
+
+### 🧩 Umbrella 与入口 | Umbrella & Entry
+- 🔒 [sagellm](https://github.com/intellistream/sagellm)
+
+### 🧾 协议与基础 | Protocol & Foundations
+- 🔒 [sagellm-protocol](https://github.com/intellistream/sagellm-protocol)
+
+### 🧱 计算与通信 | Compute & Communication
+- 🔒 [sagellm-backend](https://github.com/intellistream/sagellm-backend)
+- 🔒 [sagellm-comm](https://github.com/intellistream/sagellm-comm)
+
+### ⚙️ 引擎核心 | Engine Core
+- 🔒 [sagellm-core](https://github.com/intellistream/sagellm-core)
+
+### 🎛️ 调度与网关 | Control Plane & Gateway
+- 🔒 [sagellm-control-plane](https://github.com/intellistream/sagellm-control-plane)
+- 🔒 [sagellm-gateway](https://github.com/intellistream/sagellm-gateway)
+
+### 🧠 KV 与压缩 | KV Cache & Compression
+- 🔒 [sagellm-kv-cache](https://github.com/intellistream/sagellm-kv-cache)
+- 🔒 [sagellm-compression](https://github.com/intellistream/sagellm-compression)
+
+### 🧪 基准与验证 | Benchmarks & Validation
+- 🔒 [sagellm-benchmark](https://github.com/intellistream/sagellm-benchmark)
+
+### 📚 文档与展示 | Docs & Website
+- 🔒 [sagellm-docs](https://github.com/intellistream/sagellm-docs)
+- [sagellm-website](https://github.com/intellistream/sagellm-website)
+
+---
+
 ## 🌟 SAGE 项目生态系统 | SAGE Project Ecosystem
 
 SAGE (Streaming-Augmented Generative Execution) 是一个高性能、模块化的 AI 推理框架生态系统，通过数据流抽象实现透明、可扩展的 LLM 驱动系统。
@@ -161,14 +241,15 @@ SAGE 数据库组件的性能基准测试套件。
 <tr>
 <td width="50%">
 
-#### 🧠 [sageLLM](https://github.com/intellistream/sageLLM)
+#### 🧠 [sageLLM](https://github.com/intellistream/sagellm)
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+[![Website](https://img.shields.io/badge/Website-sagellm-blue?style=flat&logo=github)](https://intellistream.github.io/sagellm-website/)
 
-**LLM 集成模块 | LLM Integration Module**
+**国产算力 LLM 推理引擎 | LLM Inference Engine**
 
-SAGE 生态系统的大语言模型集成组件，提供统一的 LLM 接口。
+面向华为昇腾与 NVIDIA 的模块化 LLM 推理引擎，默认 CPU 优先，提供统一的 Python/HTTP 接口。
 
-*Large Language Model integration component for the SAGE ecosystem, providing unified LLM interfaces.*
+*Modular LLM inference engine for domestic computing power (Huawei Ascend, NVIDIA), CPU-first with unified Python/HTTP APIs.*
 
 </td>
 <td width="50%">
