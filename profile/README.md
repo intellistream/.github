@@ -15,86 +15,6 @@
 
 ---
 
-## 📚 SAGE 全仓库清单（含私有） | SAGE Full Repository Index (Including Private)
-
-> 说明：🔒 表示私有仓库（需组织权限）。
-
-### 🧭 核心与平台 | Core & Platform
-- [SAGE](https://github.com/intellistream/SAGE)
-- [SAGE-Pub](https://github.com/intellistream/SAGE-Pub)
-- [sage-edge](https://github.com/intellistream/sage-edge)
-- [sage-studio](https://github.com/intellistream/sage-studio)
-- [sage-agentic](https://github.com/intellistream/sage-agentic)
-- [sage-github-manager](https://github.com/intellistream/sage-github-manager)
-- [sage-pypi-publisher](https://github.com/intellistream/sage-pypi-publisher)
-- [sage-examples](https://github.com/intellistream/sage-examples)
-
-### 🗄️ 数据库与系统 | Databases & Systems
-- [sageVDB](https://github.com/intellistream/sageVDB)
-- [sageFlow](https://github.com/intellistream/sageFlow)
-- [sageTSDB](https://github.com/intellistream/sageTSDB)
-- [sageData](https://github.com/intellistream/sageData)
-- [sageRefiner](https://github.com/intellistream/sageRefiner)
-- 🔒 [sageFlownet](https://github.com/intellistream/sageFlownet)
-
-### 🤖 AI 与 RAG | AI & RAG
-- [sage-intent](https://github.com/intellistream/sage-intent)
-- [sage-finetune](https://github.com/intellistream/sage-finetune)
-- 🔒 [sage-rag](https://github.com/intellistream/sage-rag)
-
-### 🧮 算法库 | Algorithm Libraries
-- [sage-anns](https://github.com/intellistream/sage-anns)
-- [sage-amms](https://github.com/intellistream/sage-amms)
-- [sage-sias](https://github.com/intellistream/sage-sias)
-
-### 📊 评测与基准 | Evaluation & Benchmarks
-- [sage-benchmark](https://github.com/intellistream/sage-benchmark)
-- [sage-benchmark-agent](https://github.com/intellistream/sage-benchmark-agent)
-- 🔒 [sage-eval](https://github.com/intellistream/sage-eval)
-
-### 🛡️ 安全与隐私 | Safety & Privacy
-- 🔒 [sage-safety](https://github.com/intellistream/sage-safety)
-- 🔒 [sage-privacy](https://github.com/intellistream/sage-privacy)
-
-### 🔒 内部与管理 | Internal
-- 🔒 [sage-team-info](https://github.com/intellistream/sage-team-info)
-
----
-
-## 🧠 sageLLM 全仓库清单（含私有） | sageLLM Full Repository Index (Including Private)
-
-> 说明：🔒 表示私有仓库（需组织权限）。
-
-### 🧩 Umbrella 与入口 | Umbrella & Entry
-- 🔒 [sagellm](https://github.com/intellistream/sagellm)
-
-### 🧾 协议与基础 | Protocol & Foundations
-- 🔒 [sagellm-protocol](https://github.com/intellistream/sagellm-protocol)
-
-### 🧱 计算与通信 | Compute & Communication
-- 🔒 [sagellm-backend](https://github.com/intellistream/sagellm-backend)
-- 🔒 [sagellm-comm](https://github.com/intellistream/sagellm-comm)
-
-### ⚙️ 引擎核心 | Engine Core
-- 🔒 [sagellm-core](https://github.com/intellistream/sagellm-core)
-
-### 🎛️ 调度与网关 | Control Plane & Gateway
-- 🔒 [sagellm-control-plane](https://github.com/intellistream/sagellm-control-plane)
-- 🔒 [sagellm-gateway](https://github.com/intellistream/sagellm-gateway)
-
-### 🧠 KV 与压缩 | KV Cache & Compression
-- 🔒 [sagellm-kv-cache](https://github.com/intellistream/sagellm-kv-cache)
-- 🔒 [sagellm-compression](https://github.com/intellistream/sagellm-compression)
-
-### 🧪 基准与验证 | Benchmarks & Validation
-- 🔒 [sagellm-benchmark](https://github.com/intellistream/sagellm-benchmark)
-
-### 📚 文档与展示 | Docs & Website
-- 🔒 [sagellm-docs](https://github.com/intellistream/sagellm-docs)
-- [sagellm-website](https://github.com/intellistream/sagellm-website)
-
----
-
 ## 🌟 SAGE 项目生态系统 | SAGE Project Ecosystem
 
 SAGE (Streaming-Augmented Generative Execution) 是一个高性能、模块化的 AI 推理框架生态系统，通过数据流抽象实现透明、可扩展的 LLM 驱动系统。
@@ -146,7 +66,7 @@ SAGE 系统的官方对外文档仓库，包含快速开始、架构图、API �
 </tr>
 </table>
 
-### 🔧 数据库组件 | Database Components
+### 🔧 数据库与系统组件 | Database & System Components
 
 <table>
 <tr>
@@ -162,13 +82,6 @@ SAGE 系统的官方对外文档仓库，包含快速开始、架构图、API �
 
 *High-performance C++20 vector database library with pluggable ANNS architecture and multimodal support.*
 
-**核心能力 | Core Capabilities:**
-- 🔍 精确与近似搜索
-- 📏 多种距离度量 (L2, Inner Product, Cosine)
-- 🏷️ 元数据管理与过滤
-- 🔌 可插拔 ANNS 算法
-- 🎨 多模态融合支持
-
 </td>
 <td width="50%">
 
@@ -181,12 +94,6 @@ SAGE 系统的官方对外文档仓库，包含快速开始、架构图、API �
 向量原生流处理引擎，专为实时 LLM 生成任务维护和物化语义状态快照而设计。
 
 *Vector-native stream processing engine designed to maintain and materialize semantic state snapshots for real-time LLM generation tasks.*
-
-**特性 | Features:**
-- 🎯 向量原生处理
-- 📝 声明式 API
-- ⚡ 增量低延迟更新
-- 🪟 有状态窗口操作
 
 </td>
 </tr>
@@ -205,37 +112,46 @@ SAGE 生态系统的时序数据库组件，用于处理时间序列数据。
 </td>
 <td width="50%">
 
-#### 🧪 [CANDOR-Bench](https://github.com/intellistream/CANDOR-Bench)
-[![C++](https://img.shields.io/badge/C%2B%2B-latest-blue.svg)](https://isocpp.org/)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/CANDOR-Bench?style=flat&logo=github)](https://github.com/intellistream/CANDOR-Bench/stargazers)
+#### 📊 [sageData](https://github.com/intellistream/sageData)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
 
-**数据库基准测试 | Database Benchmark [SIGMOD'26]**
+**基准数据集 | Benchmark Datasets**
 
-SAGE 数据库组件的性能基准测试套件。
+SAGE 基准测试的共享数据集和资源库。
 
-*Performance benchmark suite for SAGE database components.*
+*Shared test datasets and resources for SAGE benchmarks.*
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-#### 📊 [sage-benchmark](https://github.com/intellistream/sage-benchmark)
+#### 🤏 [sageRefiner](https://github.com/intellistream/sageRefiner)
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
 
-**SAGE 基准测试套件 | SAGE Benchmark Suite**
+**RAG 上下文压缩 | RAG Context Compression**
 
-全面的 AI 数据处理管道评估框架。
+SAGE 生态系统的上下文压缩组件，用于优化 RAG 应用的输入长度。
 
-*Comprehensive evaluation framework for AI data processing pipelines.*
+*Context compression component for the SAGE ecosystem, optimizing input length for RAG applications.*
 
 </td>
 <td width="50%">
+
+#### 🔒 [sageFlownet](https://github.com/intellistream/sageFlownet)
+[![C++](https://img.shields.io/badge/C%2B%2B-blue.svg)](https://isocpp.org/)
+
+**流式网络堆栈 | Streaming Network Stack**
+
+高性能流式网络通信堆栈。
+
+*High-performance streaming network communication stack.*
+
 </td>
 </tr>
 </table>
 
-### 🤖 AI 组件 | AI Components
+### 🤖 AI 与智能体组件 | AI & Agent Components
 
 <table>
 <tr>
@@ -248,19 +164,21 @@ SAGE 数据库组件的性能基准测试套件。
 **国产算力 LLM 推理引擎 | LLM Inference Engine**
 
 面向华为昇腾与 NVIDIA 的模块化 LLM 推理引擎，默认 CPU 优先，提供统一的 Python/HTTP 接口。
+*(See dedicated section below for sub-modules)*
 
-*Modular LLM inference engine for domestic computing power (Huawei Ascend, NVIDIA), CPU-first with unified Python/HTTP APIs.*
+*Modular LLM inference engine for domestic computing power, CPU-first with unified APIs.*
 
 </td>
 <td width="50%">
 
-#### 📖 [sage-examples](https://github.com/intellistream/sage-examples)
+#### 🕵️ [sage-agentic](https://github.com/intellistream/sage-agentic)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
 
-**示例代码库 | Examples Repository**
+**SAGE 智能体框架 | SAGE Agentic Framework**
 
-SAGE 框架的示例代码和使用案例集合。
+智能体工具选择、规划、工作流与多智能体协作框架。
 
-*Collection of example code and use cases for the SAGE framework.*
+*Tool selection, planning, workflows, and agent coordination framework.*
 
 </td>
 </tr>
@@ -273,33 +191,140 @@ SAGE 框架的示例代码和使用案例集合。
 
 SAGE 项目的记忆体组件，RAG 应用的独立内存管理引擎。
 
-*Memory component of the SAGE project, a standalone memory management engine for RAG applications.*
+*Standalone memory management engine for RAG applications.*
+
+</td>
+<td width="50%">
+
+#### 🔒 [sage-rag](https://github.com/intellistream/sage-rag)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+
+**SAGE RAG 框架 | SAGE RAG Framework**
+
+RAG 流水线的文档加载、分块与检索框架。
+
+*Document loaders, chunkers, and retrievers for RAG pipelines.*
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-#### 📊 [sageData](https://github.com/intellistream/sageData)
+#### 🎯 [sage-intent](https://github.com/intellistream/sage-intent)
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
 
-**基准数据集 | Benchmark Datasets**
+**意图识别 | Intent Recognition**
 
-SAGE 基准测试的共享数据集和资源库。
+基于关键词和大模型的对话 AI 意图分类工具。
 
-*Shared test datasets and resources for SAGE benchmarks.*
+*Keyword and LLM-based intent classification for conversational AI.*
 
 </td>
 <td width="50%">
 
-#### 🤏 [sageRefiner](https://github.com/intellistream/sageRefiner)
+#### 🔧 [sage-finetune](https://github.com/intellistream/sage-finetune)
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
 
-**RAG 上下文压缩 | RAG Context Compression**
+**轻量微调工具 | Lightweight Fine-tuning**
 
-SAGE 生态系统的上下文压缩组件，用于优化 RAG 应用的输入长度。
+SAGE 生态系统的 LLM 轻量级微调工具箱。
 
-*Context compression component for the SAGE ecosystem, optimizing input length for RAG applications.*
+*Lightweight LLM fine-tuning toolkit for the SAGE ecosystem.*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 🔒 [sage-safety](https://github.com/intellistream/sage-safety)
+
+**安全框架 | Safety Framework**
+
+AI 系统的安全护栏与检测器。
+
+*Safety guardrails and detectors for AI systems.*
+
+</td>
+<td width="50%">
+
+#### 🔒 [sage-privacy](https://github.com/intellistream/sage-privacy)
+
+**隐私保护 | Privacy Protection**
+
+机器学习遗忘与差分隐私工具。
+
+*Machine unlearning and differential privacy tools.*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 📖 [sage-examples](https://github.com/intellistream/sage-examples)
+
+**示例代码库 | Examples Repository**
+
+SAGE 框架的示例代码和使用案例集合。
+
+*Collection of example code and use cases for the SAGE framework.*
+
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+
+### 📊 评测与基准 | Evaluation & Benchmarks
+
+<table>
+<tr>
+<td width="50%">
+
+#### 📉 [sage-benchmark](https://github.com/intellistream/sage-benchmark)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+
+**SAGE 基准测试套件 | SAGE Benchmark Suite**
+
+全面的 AI 数据处理管道评估框架。
+
+*Comprehensive evaluation framework for AI data processing pipelines.*
+
+</td>
+<td width="50%">
+
+#### 🤖 [sage-benchmark-agent](https://github.com/intellistream/sage-benchmark-agent)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+
+**智能体评测代理 | SAGE Benchmark Agent**
+
+配置驱动的智能体能力评估框架（工具选择、规划、时序检测）。
+
+*Configuration-driven framework for evaluating agent capabilities.*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 🧪 [CANDOR-Bench](https://github.com/intellistream/CANDOR-Bench)
+[![C++](https://img.shields.io/badge/C%2B%2B-latest-blue.svg)](https://isocpp.org/)
+
+**数据库基准测试 | Database Benchmark [SIGMOD'26]**
+
+SAGE 数据库组件的性能基准测试套件。
+
+*Performance benchmark suite for SAGE database components.*
+
+</td>
+<td width="50%">
+
+#### 🔒 [sage-eval](https://github.com/intellistream/sage-eval)
+
+**评估框架 | Evaluation Framework**
+
+AI 系统的指标、Profiler 与评审工具（Judges）。
+
+*Metrics, profilers, and judges for AI systems.*
 
 </td>
 </tr>
@@ -360,6 +385,158 @@ SAGE 生态系统的上下文压缩组件，用于优化 RAG 应用的输入长�
 
 </td>
 <td width="50%">
+
+#### ✖️ [sage-amms](https://github.com/intellistream/sage-amms)
+[![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/)
+
+**近似矩阵乘法算法 | AMM Algorithms**
+
+近似矩阵乘法算法的 C++ 实现集合。
+
+*Approximate Matrix Multiplication algorithms with C++ implementations.*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 🎯 [sage-sias](https://github.com/intellistream/sage-sias)
+
+**样本选择算法 | Sample Selection(SIAS)**
+
+用于持续学习和核心集算法的样本重要性感知选择。
+
+*SIAS - Sample-Importance-Aware Selection for continual learning and coreset algorithms.*
+
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+
+### 🧠 sageLLM 模块架构 | sageLLM Modular Architecture
+
+*The modular ecosystem behind the **sageLLM** inference engine.*
+
+<table>
+<tr>
+<td width="50%">
+
+#### 🔒 [sagellm-protocol](https://github.com/intellistream/sagellm-protocol)
+
+**基础协议 | Protocol & Foundations**
+
+定义推理引擎的 Schema、Error Codes 和基础类型 (Task0.1)。
+
+*Protocol definitions and types for sageLLM inference engine.*
+
+</td>
+<td width="50%">
+
+#### 🔒 [sagellm-core](https://github.com/intellistream/sagellm-core)
+
+**引擎核心 | Engine Core**
+
+推理引擎的核心运行时与执行逻辑 (Task0)。
+
+*Core engine and runtime for sageLLM inference.*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 🔒 [sagellm-backend](https://github.com/intellistream/sagellm-backend)
+
+**计算后端 | Compute Backend**
+
+面向国产硬件（华为昇腾 / CPU）的计算抽象层 (Task0)。
+
+*Backend provider abstraction for domestic hardware.*
+
+</td>
+<td width="50%">
+
+#### 🔒 [sagellm-comm](https://github.com/intellistream/sagellm-comm)
+
+**通信层 | Communication Layer**
+
+分布式推理的通信硬件抽象层与拓扑管理 (Task1)。
+
+*Communication layer for distributed inference.*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 🔒 [sagellm-kv-cache](https://github.com/intellistream/sagellm-kv-cache)
+
+**KV 缓存 | KV Cache Management**
+
+KV 缓存池、前缀缓存与驱逐策略管理 (Task2)。
+
+*KV cache management with prefix caching and eviction.*
+
+</td>
+<td width="50%">
+
+#### 🔒 [sagellm-control-plane](https://github.com/intellistream/sagellm-control-plane)
+
+**控制面 | Control Plane**
+
+请求路由、调度器 IR 与生命周期管理。
+
+*Request routing, scheduling, and lifecycle management.*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 🔒 [sagellm-gateway](https://github.com/intellistream/sagellm-gateway)
+
+**API 网关 | API Gateway**
+
+OpenAI 兼容的 REST API 网关。
+
+*OpenAI-compatible REST API gateway.*
+
+</td>
+<td width="50%">
+
+#### 🔒 [sagellm-compression](https://github.com/intellistream/sagellm-compression)
+
+**模型压缩 | Model Compression**
+
+量化、稀疏化与投机解码加速技术 (Task3)。
+
+*Model compression and acceleration techniques.*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 🔒 [sagellm-benchmark](https://github.com/intellistream/sagellm-benchmark)
+
+**E2E 验证 | E2E Validation**
+
+端到端演示运行器与年度验证套件。
+
+*E2E demo runner and Year 1/2/3 validation.*
+
+</td>
+<td width="50%">
+
+#### 🔒 [sagellm-docs](https://github.com/intellistream/sagellm-docs)
+
+**文档 | Documentation**
+
+内部任务书、规范与研究文档。
+
+*Internal task books, specifications, and research docs.*
+
 </td>
 </tr>
 </table>
@@ -406,6 +583,30 @@ Python monorepos 的字节码编译与 PyPI 发布工具。
 SAGE 项目的 GitHub Issues 管理工具，具有 AI 增强功能。
 
 *A comprehensive GitHub Issues management tool for SAGE project with AI-powered features.*
+
+</td>
+<td width="50%">
+
+#### 🎨 [sage-studio](https://github.com/intellistream/sage-studio)
+
+**可视化工作流 | Visual Workflow**
+
+SAGE AI 流水线的可视化构建器与 LLM Playground。
+
+*Visual workflow builder and LLM playground for SAGE AI pipelines.*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 🔒 [sage-team-info](https://github.com/intellistream/sage-team-info)
+
+**团队信息 | Team Info**
+
+SAGE 项目人员分配和敏感信息。
+
+*Internal team allocation and sensitive information.*
 
 </td>
 <td width="50%">
