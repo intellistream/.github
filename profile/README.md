@@ -341,11 +341,11 @@ AI 系统的指标、Profiler 与评审工具（Judges）。
 [![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/)
 [![GitHub Stars](https://img.shields.io/github/stars/intellistream/LibAMM?style=flat&logo=github)](https://github.com/intellistream/LibAMM/stargazers)
 
-**近似矩阵乘法库 | Approximate Matrix Multiplication Library [NIPS'24]**
+**近似矩阵乘法基准测试 | AMM Benchmark Library [NIPS'24]**
 
-聚合了主流 AMM 算法的高性能库，支持标准化评估和高效实验管理，兼容 LibTorch (C++)。
+聚合了主流 AMM 算法的高性能基准测试库，支持标准化评估和高效实验管理。
 
-*Aggregates prevalent AMM algorithms for standardized evaluations and efficient experiment management, compatible with LibTorch (C++).*
+*High-performance benchmark library aggregating prevalent AMM algorithms for standardized evaluations.*
 
 **特性 | Features:**
 - 🚀 高性能 C++ 实现
