@@ -328,11 +328,6 @@ AI 系统的指标、Profiler 与评审工具（Judges）。
 
 </td>
 </tr>
-</table>
-
-### 🧮 算法库 | Algorithm Libraries
-
-<table>
 <tr>
 <td width="50%">
 
@@ -355,6 +350,15 @@ AI 系统的指标、Profiler 与评审工具（Judges）。
 
 </td>
 <td width="50%">
+</td>
+</tr>
+</table>
+
+### 🧮 算法库 | Algorithm Libraries
+
+<table>
+<tr>
+<td width="50%">
 
 #### ⚡ [Concurrent-HNSW](https://github.com/intellistream/Concurrent-HNSW)
 [![C++](https://img.shields.io/badge/C%2B%2B-latest-blue.svg)](https://isocpp.org/)
@@ -368,8 +372,6 @@ AI 系统的指标、Profiler 与评审工具（Judges）。
 **状态 | Status:** 🚧 开发中 | In Development
 
 </td>
-</tr>
-<tr>
 <td width="50%">
 
 #### 🔍 [sage-anns](https://github.com/intellistream/sage-anns)
@@ -384,6 +386,8 @@ AI 系统的指标、Profiler 与评审工具（Judges）。
 *SAGE ANNS: Approximate Nearest Neighbor Search algorithms with unified Python interface.*
 
 </td>
+</tr>
+<tr>
 <td width="50%">
 
 #### ✖️ [sage-amms](https://github.com/intellistream/sage-amms)
@@ -396,8 +400,6 @@ AI 系统的指标、Profiler 与评审工具（Judges）。
 *Approximate Matrix Multiplication algorithms with C++ implementations.*
 
 </td>
-</tr>
-<tr>
 <td width="50%">
 
 #### 🎯 [sage-sias](https://github.com/intellistream/sage-sias)
@@ -408,8 +410,6 @@ AI 系统的指标、Profiler 与评审工具（Judges）。
 
 *SIAS - Sample-Importance-Aware Selection for continual learning and coreset algorithms.*
 
-</td>
-<td width="50%">
 </td>
 </tr>
 </table>
