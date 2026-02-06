@@ -342,7 +342,7 @@ sageLLM 推理引擎的端到端验证套件，年度验证与演示运行器。
 
 #### 📊 [sage-agent-benchmark](https://github.com/intellistream/sage-agent-benchmark)
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
-[![PyPI](https://img.shields.io/pypi/v/isage-agent-benchmark.svg)](https://pypi.org/project/isage-agent-benchmark/)
+[![PyPI](https://img.shields.io/pypi/v/isage-benchmark-agent.svg)](https://pypi.org/project/isage-benchmark-agent/)
 
 **智能体评测 | Agent Benchmark**
 
