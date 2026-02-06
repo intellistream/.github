@@ -131,6 +131,7 @@ SAGE 系统的官方对外文档仓库，包含快速开始、架构图、API �
 #### 📊 [CANDOR-Bench](https://github.com/intellistream/CANDOR-Bench)
 [![C++](https://img.shields.io/badge/C%2B%2B-latest-blue.svg)](https://isocpp.org/)
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+[![GitHub Stars](https://img.shields.io/github/stars/intellistream/CANDOR-Bench?style=flat&logo=github)](https://github.com/intellistream/CANDOR-Bench/stargazers)
 
 **ANNS 基准测试 | ANNS Benchmark [SIGMOD'26]**
 
@@ -175,6 +176,7 @@ SAGE 系统的官方对外文档仓库，包含快速开始、架构图、API �
 
 #### [sageFlownet](https://github.com/intellistream/sageFlownet)
 [![C++](https://img.shields.io/badge/C%2B%2B-blue.svg)](https://isocpp.org/)
+
 
 **分布式通信框架 | Distributed Communication Framework**
 
@@ -350,6 +352,21 @@ sageLLM 推理引擎的端到端验证套件，年度验证与演示运行器。
 
 </td>
 </tr>
+<tr>
+<td width="50%">
+
+#### 🎯 [sage-agentic-sias](https://github.com/intellistream/sage-agentic-sias)
+
+**SIAS 算法实现 | SIAS Algorithm (submodule)**
+
+sage-agentic 的子仓库，实现样本重要性感知选择算法用于持续学习和核心集。
+
+*Submodule of sage-agentic implementing Sample-Importance-Aware Selection for continual learning.*
+
+</td>
+<td width="50%">
+</td>
+</tr>
 </table>
 
 #### 🧩 记忆体 | Memory Systems
@@ -418,7 +435,38 @@ RAG 流水线端到端性能评估框架。
 </tr>
 </table>
 
-#### 🛠️ 其他工具 | Other AI Tools
+#### � 示例与教程 | Examples & Tutorials
+
+<table>
+<tr>
+<td width="50%">
+
+#### 📖 [sage-examples](https://github.com/intellistream/sage-examples)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+
+**示例代码库 | Examples Repository**
+
+SAGE 框架的应用示例代码和使用案例集合。
+
+*Collection of application examples and use cases for SAGE framework.*
+
+</td>
+<td width="50%">
+
+#### 📘 [sage-tutorials](https://github.com/intellistream/sage-tutorials)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+
+**教程代码库 | Tutorials Repository**
+
+SAGE 框架的分层教程，从 L1-L5 逐步学习。
+
+*Layer-by-layer tutorials for SAGE framework (L1-L5).*
+
+</td>
+</tr>
+</table>
+
+#### �🛠️ 其他工具 | Other AI Tools
 
 <table>
 <tr>
@@ -476,20 +524,6 @@ AI 系统的安全护栏与检测器。
 *Machine unlearning and differential privacy tools.*
 
 </td>
-</tr>
-<tr>
-<td width="50%">
-
-#### 📖 [sage-examples](https://github.com/intellistream/sage-examples)
-[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
-
-**示例代码库 | Examples Repository**
-
-SAGE 框架的示例代码和使用案例集合。
-
-*Collection of example code and use cases for SAGE framework.*
-
-</td>
 <td width="50%">
 
 #### 🧪 [sage-eval](https://github.com/intellistream/sage-eval)
@@ -502,83 +536,6 @@ L3 纯算法库，提供评估指标（F1/ROUGE/BLEU）、性能分析器与 LLM
 
 *L3 algorithm library providing metrics, profilers, and LLM judges.*
 
-</td>
-</tr>
-</table>
-### 🧮 算法库 | Algorithm Libraries
-
-<table>
-<tr>
-<td width="50%">
-
-#### ⚡ [Concurrent-HNSW](https://github.com/intellistream/Concurrent-HNSW)
-[![C++](https://img.shields.io/badge/C%2B%2B-latest-blue.svg)](https://isocpp.org/)
-
-**并发 HNSW 库 | Concurrent HNSW Library**
-
-支持并发操作的 HNSW 实现，提供快速并发的近似最近邻搜索。
-
-*Header-only C++/Python library for fast and concurrent approximate nearest neighbor search.*
-
-**状态 | Status:** 🚧 开发中 | In Development
-
-</td>
-<td width="50%">
-
-#### 🔍 [sage-anns](https://github.com/intellistream/sage-anns)
-[![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/)
-[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-anns?style=flat&logo=github)](https://github.com/intellistream/sage-anns/stargazers)
-
-**近似最近邻搜索算法库 | ANNS Algorithm Library**
-
-提供统一 Python 接口的近似最近邻搜索算法集合，支持多种 ANNS 算法。
-
-*SAGE ANNS: Approximate Nearest Neighbor Search algorithms with unified Python interface.*
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### ✖️ [sage-amms](https://github.com/intellistream/sage-amms)
-[![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/)
-
-**近似矩阵乘法算法 | AMM Algorithms**
-
-近似矩阵乘法算法的 C++ 实现集合。
-
-*Approximate Matrix Multiplication algorithms with C++ implementations.*
-
-</td>
-<td width="50%">
-
-#### 📊 [LibAMM](https://github.com/intellistream/LibAMM)
-[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
-[![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/LibAMM?style=flat&logo=github)](https://github.com/intellistream/LibAMM/stargazers)
-
-**AMM 基准测试 | AMM Benchmark Library [NIPS'24]**
-
-聚合主流 AMM 算法的高性能基准测试库，支持标准化评估和高效实验管理。
-
-*High-performance benchmark library for AMM algorithms with CUDA acceleration and PAPI profiling.*
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### 🎯 [sage-agentic-sias](https://github.com/intellistream/sage-agentic-sias)
-
-**SIAS 算法实现 | SIAS Algorithm (sage-agentic submodule)**
-
-sage-agentic 的子仓库，实现样本重要性感知选择算法用于持续学习和核心集。
-
-*Submodule of sage-agentic implementing Sample-Importance-Aware Selection for continual learning and coreset algorithms.*
-
-</td>
-<td width="50%">
 </td>
 </tr>
 </table>
@@ -683,6 +640,36 @@ OpenAI 兼容的 REST API 网关。
 *Model compression and acceleration techniques.*
 
 </td>
+</tr>
+<tr>
+<td width="50%">
+
+#### ✖️ [sage-amms](https://github.com/intellistream/sage-amms)
+[![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/)
+
+**近似矩阵乘法算子 | AMM Operators**
+
+为 sageLLM 提供基础矩阵乘法算子的 C++ 实现。
+
+*AMM operators providing foundational matrix multiplication for sageLLM.*
+
+</td>
+<td width="50%">
+
+#### 📊 [LibAMM](https://github.com/intellistream/LibAMM)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+[![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/)
+[![GitHub Stars](https://img.shields.io/github/stars/intellistream/LibAMM?style=flat&logo=github)](https://github.com/intellistream/LibAMM/stargazers)
+
+**AMM 基准测试 | AMM Benchmark Library [NIPS'24]**
+
+聚合主流 AMM 算法的高性能基准测试库。
+
+*High-performance benchmark library for AMM algorithms with CUDA acceleration.*
+
+</td>
+</tr>
+<tr>
 <td width="50%">
 
 #### 🔒 [sagellm-docs](https://github.com/intellistream/sagellm-docs)
