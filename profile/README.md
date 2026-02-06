@@ -30,6 +30,7 @@ SAGE (Streaming-Augmented Generative Execution) 是一个高性能、模块化�
 #### 🎯 [SAGE](https://github.com/intellistream/SAGE)
 [![GitHub Stars](https://img.shields.io/github/stars/intellistream/SAGE?style=flat&logo=github)](https://github.com/intellistream/SAGE/stargazers)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
+[![PyPI](https://img.shields.io/pypi/v/isage.svg)](https://pypi.org/project/isage/)
 
 **主框架 | Main Framework**
 
@@ -162,16 +163,27 @@ SAGE 系统的官方对外文档仓库，包含快速开始、架构图、API �
 
 </td>
 <td width="50%">
+</td>
+</tr>
+</table>
 
-#### 🔒 [sageFlownet](https://github.com/intellistream/sageFlownet)
+#### 🔗 分布式运行时 | Distributed Runtime
+
+<table>
+<tr>
+<td width="50%">
+
+#### [sageFlownet](https://github.com/intellistream/sageFlownet)
 [![C++](https://img.shields.io/badge/C%2B%2B-blue.svg)](https://isocpp.org/)
 
-**流式网络堆栈 | Streaming Network Stack**
+**分布式通信框架 | Distributed Communication Framework**
 
-高性能流式网络通信堆栈。
+类似 Ray 的分布式运行时基础组件，提供高性能通信堆栈。
 
-*High-performance streaming network communication stack.*
+*Ray-like distributed runtime infrastructure providing high-performance communication stack.*
 
+</td>
+<td width="50%">
 </td>
 </tr>
 </table>
@@ -291,7 +303,7 @@ sageLLM 推理引擎的端到端验证套件，年度验证与演示运行器。
 <tr>
 <td width="50%">
 
-####📊 [sagellm-control-plane-benchmark](https://github.com/intellistream/sagellm-control-plane-benchmark)
+#### 📊 [sagellm-control-plane-benchmark](https://github.com/intellistream/sagellm-control-plane-benchmark)
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
 [![PyPI](https://img.shields.io/pypi/v/isagellm-control-plane-benchmark.svg)](https://pypi.org/project/isagellm-control-plane-benchmark/)
 
@@ -557,13 +569,13 @@ L3 纯算法库，提供评估指标（F1/ROUGE/BLEU）、性能分析器与 LLM
 <tr>
 <td width="50%">
 
-#### 🎯 [sage-sias](https://github.com/intellistream/sage-sias)
+#### 🎯 [sage-agentic-sias](https://github.com/intellistream/sage-agentic-sias)
 
-**样本选择算法 | Sample Selection(SIAS)**
+**SIAS 算法实现 | SIAS Algorithm (sage-agentic submodule)**
 
-用于持续学习和核心集算法的样本重要性感知选择。
+sage-agentic 的子仓库，实现样本重要性感知选择算法用于持续学习和核心集。
 
-*SIAS - Sample-Importance-Aware Selection for continual learning and coreset algorithms.*
+*Submodule of sage-agentic implementing Sample-Importance-Aware Selection for continual learning and coreset algorithms.*
 
 </td>
 <td width="50%">
@@ -693,6 +705,7 @@ OpenAI 兼容的 REST API 网关。
 
 #### 📦 [sage-pypi-publisher](https://github.com/intellistream/sage-pypi-publisher)
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+[![PyPI](https://img.shields.io/pypi/v/isage-pypi-publisher.svg)](https://pypi.org/project/isage-pypi-publisher/)
 
 **PyPI 发布工具 | PyPI Publisher Toolkit**
 
@@ -706,6 +719,7 @@ Python monorepos 的字节码编译与 PyPI 发布工具。
 #### 🌐 [sage-edge](https://github.com/intellistream/sage-edge)
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
 [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-edge?style=flat&logo=github)](https://github.com/intellistream/sage-edge/stargazers)
+[![PyPI](https://img.shields.io/pypi/v/isage-edge.svg)](https://pypi.org/project/isage-edge/)
 
 **SAGE 网关聚合器 | SAGE Gateway Aggregator**
 
@@ -732,6 +746,7 @@ SAGE 项目的 GitHub Issues 管理工具，具有 AI 增强功能。
 <td width="50%">
 
 #### 🎨 [sage-studio](https://github.com/intellistream/sage-studio)
+[![PyPI](https://img.shields.io/pypi/v/isage-studio.svg)](https://pypi.org/project/isage-studio/)
 
 **可视化工作流 | Visual Workflow**
 
@@ -793,11 +808,16 @@ SAGE 项目人员分配和敏感信息。
 ### 安装 SAGE | Install SAGE
 
 ```bash
-# 标准安装 | Standard installation (recommended)
-pip install isage[standard]
+# 开发安装 | Development installation (recommended)
+git clone https://github.com/intellistream/SAGE.git
+cd SAGE
+./quickstart.sh --dev --yes
 
-# 核心安装 | Core installation only
-pip install isage[core]
+# PyPI 安装核心包 | Install core packages from PyPI
+pip install isage-common isage-libs isage-kernel
+
+# 完整功能安装 | Full feature installation
+pip install isage-common isage-platform isage-kernel isage-libs isage-middleware
 ```
 
 ### 简单示例 | Simple Example
@@ -840,9 +860,7 @@ env.submit()
 
 ## 📞 联系我们 | Contact Us
 
-- 💬 **WeChat/微信群**: [加入微信群](https://github.com/intellistream/SAGE/blob/main/docs/COMMUNITY.md)
-- 💬 **QQ群**: [IntelliStream课题组讨论QQ群](https://qm.qq.com/q/bcnuyQVcvm)
-- 💬 **Slack**: [Join our Slack](https://join.slack.com/t/intellistream/shared_invite/zt-2qayp8bs7-v4F71ge0RkO_rn34hBDWQg)
+- 💬 **Email**: [shuhao_zhang at hust.edu.cn](shuao_zhang@hust.edu.cn)
 - 🌐 **Website**: [intellistream.github.io](https://intellistream.github.io)
 
 ---
