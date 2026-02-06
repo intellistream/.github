@@ -321,7 +321,7 @@ sageLLM 推理引擎的端到端验证套件，年度验证与演示运行器。
 </tr>
 </table>
 
-#### 🕵️ 智能体 | Agents
+#### � Agent 工具选择 | Agent Tool Selection
 
 <table>
 <tr>
@@ -331,11 +331,11 @@ sageLLM 推理引擎的端到端验证套件，年度验证与演示运行器。
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
 [![PyPI](https://img.shields.io/pypi/v/isage-agentic.svg)](https://pypi.org/project/isage-agentic/)
 
-**智能体框架 | Agentic Framework**
+**工具选择算法框架 | Tool Selection Framework**
 
-智能体工具选择、规划、工作流与多智能体协作框架。
+Agent 工具选择算法框架，提供多种工具选择策略的统一接口。
 
-*Tool selection, planning, workflows, and agent coordination framework.*
+*Framework for agent tool selection algorithms with unified interface for multiple strategies.*
 
 </td>
 <td width="50%">
@@ -344,11 +344,11 @@ sageLLM 推理引擎的端到端验证套件，年度验证与演示运行器。
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
 [![PyPI](https://img.shields.io/pypi/v/isage-benchmark-agent.svg)](https://pypi.org/project/isage-benchmark-agent/)
 
-**智能体评测 | Agent Benchmark**
+**工具选择评测 | Tool Selection Benchmark**
 
-配置驱动的智能体能力评估框架（工具选择、规划、时序检测）。
+配置驱动的 Agent 工具选择能力评估框架（工具选择、规划、时序检测）。
 
-*Configuration-driven agent evaluation framework.*
+*Configuration-driven benchmark for agent tool selection, planning, and timing detection.*
 
 </td>
 </tr>
@@ -357,11 +357,11 @@ sageLLM 推理引擎的端到端验证套件，年度验证与演示运行器。
 
 #### 🎯 [sage-agentic-sias](https://github.com/intellistream/sage-agentic-sias)
 
-**SIAS 算法实现 | SIAS Algorithm (submodule)**
+**SIAS 工具选择算法 | SIAS Tool Selection Algorithm**
 
-sage-agentic 的子仓库，实现样本重要性感知选择算法用于持续学习和核心集。
+基于样本重要性感知选择（SIAS）的 Agent 工具选择算法实现。
 
-*Submodule of sage-agentic implementing Sample-Importance-Aware Selection for continual learning.*
+*Agent tool selection algorithm based on Sample-Importance-Aware Selection (SIAS).*
 
 </td>
 <td width="50%">
