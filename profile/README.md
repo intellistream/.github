@@ -808,16 +808,13 @@ SAGE 项目人员分配和敏感信息。
 ### 安装 SAGE | Install SAGE
 
 ```bash
-# 开发安装 | Development installation (recommended)
+# PyPI 安装 | Install from PyPI
+pip install isage
+
+# 开发安装 | Development installation
 git clone https://github.com/intellistream/SAGE.git
 cd SAGE
 ./quickstart.sh --dev --yes
-
-# PyPI 安装核心包 | Install core packages from PyPI
-pip install isage-common isage-libs isage-kernel
-
-# 完整功能安装 | Full feature installation
-pip install isage-common isage-platform isage-kernel isage-libs isage-middleware
 ```
 
 ### 简单示例 | Simple Example
