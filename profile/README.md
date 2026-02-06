@@ -342,18 +342,6 @@ RAG 流水线端到端性能评估框架。
 <tr>
 <td width="50%">
 
-#### ⚙️ [sage-scheduler-benchmark](https://github.com/intellistream/sage-scheduler-benchmark)
-[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
-
-**调度器评测 | Scheduler Benchmark**
-
-任务调度器性能与策略评估。
-
-*Performance and strategy evaluation for task schedulers.*
-
-</td>
-<td width="50%">
-
 #### �️ [sage-refiner-benchmark](https://github.com/intellistream/sage-refiner-benchmark)
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
 
