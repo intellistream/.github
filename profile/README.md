@@ -270,6 +270,16 @@ SAGE 框架的示例代码和使用案例集合。
 
 </td>
 <td width="50%">
+
+#### 🧪 [sage-eval](https://github.com/intellistream/sage-eval)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+
+**评估工具库 | Evaluation Toolkit**
+
+L3 纯算法库，提供评估指标（F1/ROUGE/BLEU）、性能分析器（Profiler）与 LLM 评审工具（Judge）。
+
+*L3 algorithm library providing metrics, profilers, and LLM judges for evaluation.*
+
 </td>
 </tr>
 </table>
@@ -292,10 +302,10 @@ SAGE 框架的示例代码和使用案例集合。
 </td>
 <td width="50%">
 
-#### 🤖 [sage-benchmark-agent](https://github.com/intellistream/sage-benchmark-agent)
+#### 🤖 [sage-agent-benchmark](https://github.com/intellistream/sage-agent-benchmark)
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
 
-**智能体评测代理 | SAGE Benchmark Agent**
+**智能体评测 | Agent Benchmark**
 
 配置驱动的智能体能力评估框架（工具选择、规划、时序检测）。
 
@@ -306,6 +316,70 @@ SAGE 框架的示例代码和使用案例集合。
 <tr>
 <td width="50%">
 
+#### 🎯 [sage-control-plane-benchmark](https://github.com/intellistream/sage-control-plane-benchmark)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+
+**控制面评测 | Control Plane Benchmark**
+
+LLM/Embedding Control Plane 调度策略性能评估。
+
+*Performance evaluation for Control Plane scheduling strategies.*
+
+</td>
+<td width="50%">
+
+#### 📚 [sage-rag-benchmark](https://github.com/intellistream/sage-rag-benchmark)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+
+**RAG 评测 | RAG Benchmark**
+
+RAG 流水线端到端性能评估框架。
+
+*End-to-end performance evaluation framework for RAG pipelines.*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### ⚙️ [sage-scheduler-benchmark](https://github.com/intellistream/sage-scheduler-benchmark)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+
+**调度器评测 | Scheduler Benchmark**
+
+任务调度器性能与策略评估。
+
+*Performance and strategy evaluation for task schedulers.*
+
+</td>
+<td width="50%">
+
+#### �️ [sage-refiner-benchmark](https://github.com/intellistream/sage-refiner-benchmark)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+
+**上下文压缩评测 | Context Compression Benchmark**
+
+上下文压缩与 Refiner 算法性能评估（LongRefiner、REFORM、Provence 等）。
+
+*Performance evaluation for context compression and refiner algorithms.*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 🧠 [sage-memory-benchmark](https://github.com/intellistream/sage-memory-benchmark)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+
+**记忆系统评测 | Memory System Benchmark**
+
+NeuroMem 记忆系统性能评估。
+
+*Performance evaluation for NeuroMem memory systems.*
+
+</td>
+<td width="50%">
+
 #### 🧪 [CANDOR-Bench](https://github.com/intellistream/CANDOR-Bench)
 [![C++](https://img.shields.io/badge/C%2B%2B-latest-blue.svg)](https://isocpp.org/)
 
@@ -314,17 +388,6 @@ SAGE 框架的示例代码和使用案例集合。
 SAGE 数据库组件的性能基准测试套件。
 
 *Performance benchmark suite for SAGE database components.*
-
-</td>
-<td width="50%">
-
-#### 🔒 [sage-eval](https://github.com/intellistream/sage-eval)
-
-**评估框架 | Evaluation Framework**
-
-AI 系统的指标、Profiler 与评审工具（Judges）。
-
-*Metrics, profilers, and judges for AI systems.*
 
 </td>
 </tr>
