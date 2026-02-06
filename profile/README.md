@@ -46,6 +46,26 @@ SAGE (Streaming-Augmented Generative Execution) 是一个高性能、模块化�
 </td>
 <td width="50%">
 
+#### � [sage-benchmark](https://github.com/intellistream/sage-benchmark)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
+[![PyPI](https://img.shields.io/pypi/v/isage-benchmark.svg)](https://pypi.org/project/isage-benchmark/)
+
+**SAGE 系统基准测试 | SAGE System Benchmarks**
+
+SAGE 框架的端到端基准测试套件，评估系统整体性能。
+
+*End-to-end benchmark suite for SAGE framework evaluating system-level performance.*
+
+**测试维度 | Test Dimensions:**
+- 🔄 控制面调度 | Control Plane Scheduling  
+- 🧪 端到端流水线 | E2E Pipeline
+- 📈 隔离性与扩展性 | Isolation & Scalability
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
 #### 📚 [SAGE-Pub](https://github.com/intellistream/SAGE-Pub)
 [![Documentation](https://img.shields.io/badge/docs-online-brightgreen)](https://intellistream.github.io/SAGE-Pub/)
 [![GitHub Stars](https://img.shields.io/github/stars/intellistream/SAGE-Pub?style=flat&logo=github)](https://github.com/intellistream/SAGE-Pub/stargazers)
@@ -62,6 +82,8 @@ SAGE 系统的官方对外文档仓库，包含快速开始、架构图、API �
 - 📊 Dashboard 使用指南
 - 🔗 API 文档
 
+</td>
+<td width="50%">
 </td>
 </tr>
 </table>
@@ -85,6 +107,20 @@ SAGE 系统的官方对外文档仓库，包含快速开始、架构图、API �
 </td>
 <td width="50%">
 
+#### 📊 [CANDOR-Bench](https://github.com/intellistream/CANDOR-Bench)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+
+**向量数据库基准测试 | Vector Database Benchmark**
+
+全面的向量数据库基准测试套件，评估 sageVDB 等向量数据库的性能。
+
+*Comprehensive benchmark suite for vector databases, evaluating performance of sageVDB and others.*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
 #### 🌊 [sageFlow](https://github.com/intellistream/sageFlow)
 [![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/)
 [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sageFlow?style=flat&logo=github)](https://github.com/intellistream/sageFlow/stargazers)
@@ -96,8 +132,6 @@ SAGE 系统的官方对外文档仓库，包含快速开始、架构图、API �
 *Vector-native stream processing engine designed to maintain and materialize semantic state snapshots for real-time LLM generation tasks.*
 
 </td>
-</tr>
-<tr>
 <td width="50%">
 
 #### ⏱️ [sageTSDB](https://github.com/intellistream/sageTSDB)
@@ -110,6 +144,8 @@ SAGE 生态系统的时序数据库组件，用于处理时间序列数据。
 *Time series database component of the SAGE ecosystem for handling temporal data streams.*
 
 </td>
+</tr>
+<tr>
 <td width="50%">
 
 #### 📊 [sageData](https://github.com/intellistream/sageData)
@@ -122,8 +158,6 @@ SAGE 基准测试的共享数据集和资源库。
 *Shared test datasets and resources for SAGE benchmarks.*
 
 </td>
-</tr>
-<tr>
 <td width="50%">
 
 #### 🤏 [sageRefiner](https://github.com/intellistream/sageRefiner)
@@ -134,6 +168,21 @@ SAGE 基准测试的共享数据集和资源库。
 SAGE 生态系统的上下文压缩组件，用于优化 RAG 应用的输入长度。
 
 *Context compression component for the SAGE ecosystem, optimizing input length for RAG applications.*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 📊 [sage-refiner-benchmark](https://github.com/intellistream/sage-refiner-benchmark)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+[![PyPI](https://img.shields.io/pypi/v/isage-refiner-benchmark.svg)](https://pypi.org/project/isage-refiner-benchmark/)
+
+**Refiner 基准测试 | Refiner Benchmarks**
+
+评估各种上下文压缩算法在 RAG 应用中的性能。
+
+*Benchmark suite for evaluating context compression algorithms in RAG applications.*
 
 </td>
 <td width="50%">
@@ -171,6 +220,34 @@ SAGE 生态系统的上下文压缩组件，用于优化 RAG 应用的输入长�
 </td>
 <td width="50%">
 
+#### � [sagellm-benchmark](https://github.com/intellistream/sagellm-benchmark)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+[![PyPI](https://img.shields.io/pypi/v/isagellm-benchmark.svg)](https://pypi.org/project/isagellm-benchmark/)
+
+**sageLLM E2E 评测 | sageLLM E2E Validation**
+
+sageLLM 推理引擎的端到端验证套件，年度验证与演示运行器。
+
+*End-to-end validation suite for sageLLM inference engine with yearly validations.*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 📊 [sagellm-control-plane-benchmark](https://github.com/intellistream/sagellm-control-plane-benchmark)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+[![PyPI](https://img.shields.io/pypi/v/isagellm-control-plane-benchmark.svg)](https://pypi.org/project/isagellm-control-plane-benchmark/)
+
+**Control Plane 评测 | Control Plane Benchmark**
+
+专门评测 sageLLM Control Plane 模块的调度策略、吞吐量、延迟等性能指标。
+
+*Dedicated benchmark for sageLLM Control Plane module evaluating scheduling strategies, throughput, and latency.*
+
+</td>
+<td width="50%">
+
 #### 🕵️ [sage-agentic](https://github.com/intellistream/sage-agentic)
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
 
@@ -185,6 +262,19 @@ SAGE 生态系统的上下文压缩组件，用于优化 RAG 应用的输入长�
 <tr>
 <td width="50%">
 
+#### 📊 [sage-agent-benchmark](https://github.com/intellistream/sage-agent-benchmark)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+[![PyPI](https://img.shields.io/pypi/v/isage-agent-benchmark.svg)](https://pypi.org/project/isage-agent-benchmark/)
+
+**智能体评测 | Agent Benchmark**
+
+配置驱动的智能体能力评估框架（工具选择、规划、时序检测）。
+
+*Configuration-driven framework for evaluating agent capabilities.*
+
+</td>
+<td width="50%">
+
 #### 🧩 [neuromem](https://github.com/intellistream/neuromem)
 
 **记忆管理引擎 | Memory Management Engine**
@@ -192,6 +282,21 @@ SAGE 生态系统的上下文压缩组件，用于优化 RAG 应用的输入长�
 SAGE 项目的记忆体组件，RAG 应用的独立内存管理引擎。
 
 *Standalone memory management engine for RAG applications.*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 📊 [sage-memory-benchmark](https://github.com/intellistream/sage-memory-benchmark)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+[![PyPI](https://img.shields.io/pypi/v/isage-memory-benchmark.svg)](https://pypi.org/project/isage-memory-benchmark/)
+
+**记忆系统评测 | Memory System Benchmark**
+
+NeuroMem 记忆系统性能评估。
+
+*Performance evaluation for NeuroMem memory systems.*
 
 </td>
 <td width="50%">
@@ -210,6 +315,19 @@ RAG 流水线的文档加载、分块与检索框架。
 <tr>
 <td width="50%">
 
+#### 📊 [sage-rag-benchmark](https://github.com/intellistream/sage-rag-benchmark)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+[![PyPI](https://img.shields.io/pypi/v/isage-rag-benchmark.svg)](https://pypi.org/project/isage-rag-benchmark/)
+
+**RAG 评测 | RAG Benchmark**
+
+RAG 流水线端到端性能评估框架。
+
+*End-to-end performance evaluation framework for RAG pipelines.*
+
+</td>
+<td width="50%">
+
 #### 🎯 [sage-intent](https://github.com/intellistream/sage-intent)
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
 
@@ -220,6 +338,8 @@ RAG 流水线的文档加载、分块与检索框架。
 *Keyword and LLM-based intent classification for conversational AI.*
 
 </td>
+</tr>
+<tr>
 <td width="50%">
 
 #### 🔧 [sage-finetune](https://github.com/intellistream/sage-finetune)
@@ -232,8 +352,6 @@ SAGE 生态系统的 LLM 轻量级微调工具箱。
 *Lightweight LLM fine-tuning toolkit for the SAGE ecosystem.*
 
 </td>
-</tr>
-<tr>
 <td width="50%">
 
 #### 🔒 [sage-safety](https://github.com/intellistream/sage-safety)
@@ -245,6 +363,8 @@ AI 系统的安全护栏与检测器。
 *Safety guardrails and detectors for AI systems.*
 
 </td>
+</tr>
+<tr>
 <td width="50%">
 
 #### 🔒 [sage-privacy](https://github.com/intellistream/sage-privacy)
@@ -256,8 +376,6 @@ AI 系统的安全护栏与检测器。
 *Machine unlearning and differential privacy tools.*
 
 </td>
-</tr>
-<tr>
 <td width="50%">
 
 #### 📖 [sage-examples](https://github.com/intellistream/sage-examples)
@@ -269,6 +387,8 @@ SAGE 框架的示例代码和使用案例集合。
 *Collection of example code and use cases for the SAGE framework.*
 
 </td>
+</tr>
+<tr>
 <td width="50%">
 
 #### 🧪 [sage-eval](https://github.com/intellistream/sage-eval)
@@ -279,125 +399,6 @@ SAGE 框架的示例代码和使用案例集合。
 L3 纯算法库，提供评估指标（F1/ROUGE/BLEU）、性能分析器（Profiler）与 LLM 评审工具（Judge）。
 
 *L3 algorithm library providing metrics, profilers, and LLM judges for evaluation.*
-
-</td>
-</tr>
-</table>
-
-### 📊 评测与基准 | Evaluation & Benchmarks
-
-<table>
-<tr>
-<td width="50%">
-
-#### 📉 [sage-benchmark](https://github.com/intellistream/sage-benchmark)
-[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
-
-**SAGE 基准测试套件 | SAGE Benchmark Suite**
-
-全面的 AI 数据处理管道评估框架。
-
-*Comprehensive evaluation framework for AI data processing pipelines.*
-
-</td>
-<td width="50%">
-
-#### 🤖 [sage-agent-benchmark](https://github.com/intellistream/sage-agent-benchmark)
-[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
-
-**智能体评测 | Agent Benchmark**
-
-配置驱动的智能体能力评估框架（工具选择、规划、时序检测）。
-
-*Configuration-driven framework for evaluating agent capabilities.*
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### 🎯 [sage-control-plane-benchmark](https://github.com/intellistream/sage-control-plane-benchmark)
-[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
-
-**控制面评测 | Control Plane Benchmark**
-
-LLM/Embedding Control Plane 调度策略性能评估。
-
-*Performance evaluation for Control Plane scheduling strategies.*
-
-</td>
-<td width="50%">
-
-#### 📚 [sage-rag-benchmark](https://github.com/intellistream/sage-rag-benchmark)
-[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
-
-**RAG 评测 | RAG Benchmark**
-
-RAG 流水线端到端性能评估框架。
-
-*End-to-end performance evaluation framework for RAG pipelines.*
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### �️ [sage-refiner-benchmark](https://github.com/intellistream/sage-refiner-benchmark)
-[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
-
-**上下文压缩评测 | Context Compression Benchmark**
-
-上下文压缩与 Refiner 算法性能评估（LongRefiner、REFORM、Provence 等）。
-
-*Performance evaluation for context compression and refiner algorithms.*
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### 🧠 [sage-memory-benchmark](https://github.com/intellistream/sage-memory-benchmark)
-[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
-
-**记忆系统评测 | Memory System Benchmark**
-
-NeuroMem 记忆系统性能评估。
-
-*Performance evaluation for NeuroMem memory systems.*
-
-</td>
-<td width="50%">
-
-#### 🧪 [CANDOR-Bench](https://github.com/intellistream/CANDOR-Bench)
-[![C++](https://img.shields.io/badge/C%2B%2B-latest-blue.svg)](https://isocpp.org/)
-
-**数据库基准测试 | Database Benchmark [SIGMOD'26]**
-
-SAGE 数据库组件的性能基准测试套件。
-
-*Performance benchmark suite for SAGE database components.*
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### 🔢 [LibAMM](https://github.com/intellistream/LibAMM)
-[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
-[![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/LibAMM?style=flat&logo=github)](https://github.com/intellistream/LibAMM/stargazers)
-
-**近似矩阵乘法基准测试 | AMM Benchmark Library [NIPS'24]**
-
-聚合了主流 AMM 算法的高性能基准测试库，支持标准化评估和高效实验管理。
-
-*High-performance benchmark library aggregating prevalent AMM algorithms for standardized evaluations.*
-
-**特性 | Features:**
-- 🚀 高性能 C++ 实现
-- 🐍 Python 绑定 (PyAMM)
-- 🔥 可选 CUDA 加速支持
-- 📊 PAPI 性能分析工具
 
 </td>
 <td width="50%">
@@ -453,6 +454,22 @@ SAGE 数据库组件的性能基准测试套件。
 </td>
 <td width="50%">
 
+#### 📊 [LibAMM](https://github.com/intellistream/LibAMM)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+[![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/)
+[![GitHub Stars](https://img.shields.io/github/stars/intellistream/LibAMM?style=flat&logo=github)](https://github.com/intellistream/LibAMM/stargazers)
+
+**AMM 基准测试 | AMM Benchmark Library [NIPS'24]**
+
+聚合主流 AMM 算法的高性能基准测试库，支持标准化评估和高效实验管理。
+
+*High-performance benchmark library for AMM algorithms with CUDA acceleration and PAPI profiling.*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
 #### 🎯 [sage-sias](https://github.com/intellistream/sage-sias)
 
 **样本选择算法 | Sample Selection(SIAS)**
@@ -461,6 +478,8 @@ SAGE 数据库组件的性能基准测试套件。
 
 *SIAS - Sample-Importance-Aware Selection for continual learning and coreset algorithms.*
 
+</td>
+<td width="50%">
 </td>
 </tr>
 </table>
@@ -563,19 +582,6 @@ OpenAI 兼容的 REST API 网关。
 量化、稀疏化与投机解码加速技术 (Task3)。
 
 *Model compression and acceleration techniques.*
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### 🔒 [sagellm-benchmark](https://github.com/intellistream/sagellm-benchmark)
-
-**E2E 验证 | E2E Validation**
-
-端到端演示运行器与年度验证套件。
-
-*E2E demo runner and Year 1/2/3 validation.*
 
 </td>
 <td width="50%">
