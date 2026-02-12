@@ -321,47 +321,63 @@ sageLLM 推理引擎的端到端验证套件，年度验证与演示运行器。
 </tr>
 </table>
 
-#### � Agent 工具选择 | Agent Tool Selection
+#### 🤖 智能体框架 | Agentic AI Framework
+
+> **Note**: Agent 框架已集成到 SAGE 主仓库 (`sage.libs.agentic`)，无需单独安装。
+
+**包含功能 / Features**:
+- 📋 规划算法: ReAct, Tree of Thoughts (ToT), Hierarchical Planning
+- 🔄 工作流编排: Workflow orchestration and optimization  
+- 🧠 推理能力: Advanced reasoning capabilities
+- 🎯 意图识别: Intent detection and classification
+
+**安装 / Installation**: `pip install isage-libs` (Agent 功能已包含)
+
+**导入 / Import**: `from sage.libs.agentic import ReActPlanner, ToTPlanner`
+
+#### 🔧 工具选择 | Tool Selection & Use
 
 <table>
 <tr>
 <td width="50%">
 
-#### [sage-agentic](https://github.com/intellistream/sage-agentic)
+#### [sage-tooluse](https://github.com/intellistream/sage-tooluse) 🚧
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
-[![PyPI](https://img.shields.io/pypi/v/isage-agentic.svg)](https://pypi.org/project/isage-agentic/)
+[![PyPI](https://img.shields.io/pypi/v/isage-tooluse.svg)](https://pypi.org/project/isage-tooluse/)
 
-**工具选择算法框架 | Tool Selection Framework**
+**工具选择算法库 | Tool Selection Algorithms** *(即将创建 / Coming Soon)*
 
-Agent 工具选择算法框架，提供多种工具选择策略的统一接口。
+工具检索与排序算法集合：关键词匹配、语义相似度、混合策略、DFS-DT、Gorilla 等。
 
-*Framework for agent tool selection algorithms with unified interface for multiple strategies.*
+*Tool retrieval and ranking algorithms: keyword, embedding, hybrid, DFS-DT, Gorilla, etc.*
 
 </td>
 <td width="50%">
 
-#### 📊 [sage-agent-benchmark](https://github.com/intellistream/sage-agent-benchmark)
+#### 📊 [sage-tooluse-benchmark](https://github.com/intellistream/sage-tooluse-benchmark) 🔄
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
-[![PyPI](https://img.shields.io/pypi/v/isage-benchmark-agent.svg)](https://pypi.org/project/isage-benchmark-agent/)
+[![PyPI](https://img.shields.io/pypi/v/isage-tooluse-benchmark.svg)](https://pypi.org/project/isage-tooluse-benchmark/)
 
-**工具选择评测 | Tool Selection Benchmark**
+**工具选择评测 | Tool Selection Benchmark** *(即将重命名 / To be renamed from sage-agent-benchmark)*
 
-配置驱动的 Agent 工具选择能力评估框架（工具选择、规划、时序检测）。
+工具选择、多步规划、时序判断的配置驱动评估框架。
 
-*Configuration-driven benchmark for agent tool selection, planning, and timing detection.*
+*Benchmark for tool selection, multi-step planning, and timing detection.*
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-#### 🎯 [sage-agentic-sias](https://github.com/intellistream/sage-agentic-sias)
+#### 🎯 [sage-tooluse-sias](https://github.com/intellistream/sage-tooluse-sias) 🔄
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+[![PyPI](https://img.shields.io/pypi/v/isage-tooluse-sias.svg)](https://pypi.org/project/isage-tooluse-sias/)
 
-**SIAS 工具选择算法 | SIAS Tool Selection Algorithm**
+**SIAS 工具选择算法 | SIAS for Tool Selection** *(即将重命名 / To be renamed from sage-sias)*
 
-基于样本重要性感知选择（SIAS）的 Agent 工具选择算法实现。
+基于样本重要性感知选择（SIAS）的新型工具选择算法，支持持续学习与轨迹筛选。
 
-*Agent tool selection algorithm based on Sample-Importance-Aware Selection (SIAS).*
+*Novel tool selection algorithm based on Sample-Importance-Aware Selection with continual learning.*
 
 </td>
 <td width="50%">
