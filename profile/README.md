@@ -341,9 +341,9 @@ sageLLM 推理引擎的端到端验证套件，年度验证与演示运行器。
 <tr>
 <td width="50%">
 
-#### [sage-tooluse](https://github.com/intellistream/sage-tooluse) 🚧
+#### [sage-agentic-tooluse](https://github.com/intellistream/sage-agentic-tooluse) 🚧
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
-[![PyPI](https://img.shields.io/pypi/v/isage-tooluse.svg)](https://pypi.org/project/isage-tooluse/)
+[![PyPI](https://img.shields.io/pypi/v/isage-agentic-tooluse.svg)](https://pypi.org/project/isage-agentic-tooluse/)
 
 **工具选择算法库 | Tool Selection Algorithms** *(即将创建 / Coming Soon)*
 
@@ -354,9 +354,9 @@ sageLLM 推理引擎的端到端验证套件，年度验证与演示运行器。
 </td>
 <td width="50%">
 
-#### 📊 [sage-tooluse-benchmark](https://github.com/intellistream/sage-tooluse-benchmark) 🔄
+#### 📊 [sage-agentic-tooluse-benchmark](https://github.com/intellistream/sage-agentic-tooluse-benchmark) 🔄
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
-[![PyPI](https://img.shields.io/pypi/v/isage-tooluse-benchmark.svg)](https://pypi.org/project/isage-tooluse-benchmark/)
+[![PyPI](https://img.shields.io/pypi/v/isage-agentic-tooluse-benchmark.svg)](https://pypi.org/project/isage-agentic-tooluse-benchmark/)
 
 **工具选择评测 | Tool Selection Benchmark** *(即将重命名 / To be renamed from sage-agent-benchmark)*
 
