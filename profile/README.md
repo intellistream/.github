@@ -67,9 +67,9 @@ SAGE 框架的端到端基准测试套件，评估系统整体性能。
 <tr>
 <td width="50%">
 
-#### 📚 [SAGE-Pub](https://github.com/intellistream/SAGE-Pub)
-[![Documentation](https://img.shields.io/badge/docs-online-brightgreen)](https://intellistream.github.io/SAGE-Pub/)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/SAGE-Pub?style=flat&logo=github)](https://github.com/intellistream/SAGE-Pub/stargazers)
+#### 📚 [sage-docs](https://github.com/intellistream/sage-docs)
+[![Documentation](https://img.shields.io/badge/docs-online-brightgreen)](https://intellistream.github.io/sage-docs/)
+[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-docs?style=flat&logo=github)](https://github.com/intellistream/sage-docs/stargazers)
 
 **文档中心 | Documentation Hub**
 
@@ -369,9 +369,9 @@ sageLLM 推理引擎的端到端验证套件，年度验证与演示运行器。
 <tr>
 <td width="50%">
 
-#### 🎯 [sage-tooluse-sias](https://github.com/intellistream/sage-tooluse-sias) 🔄
+#### 🎯 [sage-agentic-tooluse-sias](https://github.com/intellistream/sage-agentic-tooluse-sias) 🔄
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
-[![PyPI](https://img.shields.io/pypi/v/isage-tooluse-sias.svg)](https://pypi.org/project/isage-tooluse-sias/)
+[![PyPI](https://img.shields.io/pypi/v/isage-agentic-tooluse-sias.svg)](https://pypi.org/project/isage-agentic-tooluse-sias/)
 
 **SIAS 工具选择算法 | SIAS for Tool Selection** *(即将重命名 / To be renamed from sage-sias)*
 
@@ -844,9 +844,9 @@ env = LocalEnvironment("rag_pipeline")
 env.submit()
 ```
 
-详细文档请访问：[SAGE Documentation](https://intellistream.github.io/SAGE-Pub/)
+详细文档请访问：[SAGE Documentation](https://intellistream.github.io/sage-docs/)
 
-*For detailed documentation, visit: [SAGE Documentation](https://intellistream.github.io/SAGE-Pub/)*
+*For detailed documentation, visit: [SAGE Documentation](https://intellistream.github.io/sage-docs/)*
 
 ---
 
