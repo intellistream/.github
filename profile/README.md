@@ -47,7 +47,7 @@ SAGE (Streaming-Augmented Generative Execution) 是一个高性能、模块化�
 </td>
 <td width="50%">
 
-#### � [sage-benchmark](https://github.com/intellistream/sage-benchmark)
+#### 📊 [sage-benchmark](https://github.com/intellistream/sage-benchmark)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
 [![PyPI](https://img.shields.io/pypi/v/isage-benchmark.svg)](https://pypi.org/project/isage-benchmark/)
 
@@ -58,7 +58,7 @@ SAGE 框架的端到端基准测试套件，评估系统整体性能。
 *End-to-end benchmark suite for SAGE framework evaluating system-level performance.*
 
 **测试维度 | Test Dimensions:**
-- 🔄 控制面调度 | Control Plane Scheduling  
+- 🔄 控制面调度 | Control Plane Scheduling
 - 🧪 端到端流水线 | E2E Pipeline
 - 📈 隔离性与扩展性 | Isolation & Scalability
 
@@ -82,6 +82,116 @@ SAGE 系统的官方对外文档仓库，包含快速开始、架构图、API �
 - 🏗️ 架构与核心模块说明
 - 📊 Dashboard 使用指南
 - 🔗 API 文档
+
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+
+### 🏗️ SAGE 分层包 | SAGE Layered Packages
+
+SAGE 核心框架已拆分为独立发布的分层包，遵循严格的 L1→L2→L3→L4→L5 依赖方向。
+
+*The SAGE core is structured as independently-released layered packages, with strict L1→L2→L3→L4→L5 dependency direction.*
+
+<table>
+<tr>
+<td width="50%">
+
+#### ⚙️ [sage-common](https://github.com/intellistream/sage-common) — L1
+[![PyPI](https://img.shields.io/pypi/v/isage-common.svg)](https://pypi.org/project/isage-common/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
+
+**基础层 | Foundation Layer**
+
+核心工具、配置管理、日志、协议与嵌入组件，被所有上层包依赖。
+
+*Core utilities, config management, logging, protocols, and embedding components shared across all SAGE packages.*
+
+</td>
+<td width="50%">
+
+#### ⚙️ [sage-platform](https://github.com/intellistream/sage-platform) — L2
+[![PyPI](https://img.shields.io/pypi/v/isage-platform.svg)](https://pypi.org/project/isage-platform/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
+
+**平台层 | Platform Layer**
+
+队列、存储与服务抽象——SAGE 基础设施的接口层。
+
+*Queue, storage, and service abstractions for SAGE infrastructure.*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### ⚙️ [sage-kernel](https://github.com/intellistream/sage-kernel) — L3
+[![PyPI](https://img.shields.io/pypi/v/isage-kernel.svg)](https://pypi.org/project/isage-kernel/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
+
+**内核层 | Kernel Layer**
+
+流式运行时、调度器、Flow DSL、容错与 RPC 通信；含 C++ 扩展骨架。
+
+*Streaming runtime, scheduler, Flow DSL, fault tolerance, and RPC; includes C++ extension skeleton.*
+
+</td>
+<td width="50%">
+
+#### ⚙️ [sage-libs](https://github.com/intellistream/sage-libs) — L3
+[![PyPI](https://img.shields.io/pypi/v/isage-libs.svg)](https://pypi.org/project/isage-libs/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
+
+**算法库层 | Algorithm Library Layer**
+
+纯算法接口与实现库（智能体、RAG、评估、意图识别等）；不含运行时绑定。
+
+*Pure algorithm interfaces and implementations (agentic, RAG, eval, intent, etc.); no runtime dependencies.*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### ⚙️ [sage-middleware](https://github.com/intellistream/sage-middleware) — L4
+[![PyPI](https://img.shields.io/pypi/v/isage-middleware.svg)](https://pypi.org/project/isage-middleware/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
+
+**中间件层 | Middleware Layer**
+
+面向运行时的服务组件：向量数据库、记忆后端、联网算子。
+
+*Runtime-bound service components: vector DB, memory backends, networked operators.*
+
+</td>
+<td width="50%">
+
+#### ⚙️ [sage-cli](https://github.com/intellistream/sage-cli) — L5
+[![PyPI](https://img.shields.io/pypi/v/isage-cli.svg)](https://pypi.org/project/isage-cli/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
+
+**命令行接口层 | CLI Layer**
+
+统一命令行接口：应用命令（chat/embedding/gateway）与平台命令（cluster/job/worker）。
+
+*Unified CLI for SAGE: app commands (chat, embedding, gateway) and platform commands (cluster, job, worker).*
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 🔧 [sage-dev-tools](https://github.com/intellistream/sage-dev-tools) — L5
+[![PyPI](https://img.shields.io/pypi/v/isage-dev-tools.svg)](https://pypi.org/project/isage-dev-tools/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
+
+**开发工具 | Developer Tools**
+
+SAGE 开发工具链（`sage-dev` CLI）：代码质量、测试、工作报告、维护工具，合并了原 `sage.tools` L5 层。
+
+*SAGE developer toolchain (`sage-dev` CLI): quality, testing, work-report, and maintenance tools.*
 
 </td>
 <td width="50%">
