@@ -172,6 +172,13 @@ L5  sage-cli       sage-dev-tools  (parallel)
 </tr>
 </table>
 
+##### L3 子仓库（按功能分组） | L3 Satellite Repos (By Function)
+
+- **算法与组件库 | Algorithm Libraries**: [sage-agentic](https://github.com/intellistream/sage-agentic), [sage-rag](https://github.com/intellistream/sage-rag), [sage-eval](https://github.com/intellistream/sage-eval), [sage-intent](https://github.com/intellistream/sage-intent)
+- **模型能力增强 | Model Capability Extensions**: [sage-finetune](https://github.com/intellistream/sage-finetune), [sage-safety](https://github.com/intellistream/sage-safety), [sage-privacy](https://github.com/intellistream/sage-privacy), [sageRefiner](https://github.com/intellistream/sageRefiner)
+- **ToolUse 体系 | ToolUse Stack**: [sage-agentic-tooluse](https://github.com/intellistream/sage-agentic-tooluse), [sage-agentic-tooluse-sias](https://github.com/intellistream/sage-agentic-tooluse-sias), [sage-agentic-tooluse-benchmark](https://github.com/intellistream/sage-agentic-tooluse-benchmark)
+- **评测仓库 | Benchmarks**: [sage-rag-benchmark](https://github.com/intellistream/sage-rag-benchmark), [sage-refiner-benchmark](https://github.com/intellistream/sage-refiner-benchmark)
+
 #### L4 — 中间件层 | Middleware
 
 <table>
@@ -189,6 +196,13 @@ L5  sage-cli       sage-dev-tools  (parallel)
 </td>
 </tr>
 </table>
+
+##### L4 子仓库（按功能分组） | L4 Satellite Repos (By Function)
+
+- **向量数据库与检索 | Vector DB & Retrieval**: [sageVDB](https://github.com/intellistream/sageVDB), [sage-anns](https://github.com/intellistream/sage-anns), [CANDOR-Bench](https://github.com/intellistream/CANDOR-Bench)
+- **流式与时序系统 | Stream & Time-Series Systems**: [sageFlow](https://github.com/intellistream/sageFlow), [sageTSDB](https://github.com/intellistream/sageTSDB), [sageFlownet](https://github.com/intellistream/sageFlownet)
+- **数据与记忆组件 | Data & Memory Components**: [sageData](https://github.com/intellistream/sageData), [neuromem](https://github.com/intellistream/neuromem), [sage-memory-benchmark](https://github.com/intellistream/sage-memory-benchmark)
+- **推理中间件生态 | Inference Middleware Ecosystem**: [sagellm](https://github.com/intellistream/sagellm), [sagellm-protocol](https://github.com/intellistream/sagellm-protocol), [sagellm-core](https://github.com/intellistream/sagellm-core), [sagellm-backend](https://github.com/intellistream/sagellm-backend), [sagellm-control-plane](https://github.com/intellistream/sagellm-control-plane), [sagellm-gateway](https://github.com/intellistream/sagellm-gateway), [sagellm-kv-cache](https://github.com/intellistream/sagellm-kv-cache), [sagellm-comm](https://github.com/intellistream/sagellm-comm), [sagellm-compression](https://github.com/intellistream/sagellm-compression), [sagellm-benchmark](https://github.com/intellistream/sagellm-benchmark)
 
 #### L5 — 应用层 | Application
 
@@ -219,7 +233,14 @@ SAGE 开发工具链（`sage-dev` CLI）：代码质量、测试、工作报告�
 </tr>
 </table>
 
-### 🔧 数据库与系统组件 | Database & System Components
+##### L5 子仓库（按功能分组） | L5 Satellite Repos (By Function)
+
+- **应用入口与体验层 | App Entry & Experience**: [sage-cli](https://github.com/intellistream/sage-cli), [sage-studio](https://github.com/intellistream/sage-studio), [sage-edge](https://github.com/intellistream/sage-edge)
+- **开发与工程工具链 | Dev & Engineering Tooling**: [sage-dev-tools](https://github.com/intellistream/sage-dev-tools), [sage-pypi-publisher](https://github.com/intellistream/sage-pypi-publisher), [sage-github-manager](https://github.com/intellistream/sage-github-manager), [sage-team-info](https://github.com/intellistream/sage-team-info)
+- **文档与教学资源 | Docs & Learning**: [sage-docs](https://github.com/intellistream/sage-docs), [sage-examples](https://github.com/intellistream/sage-examples), [sage-tutorials](https://github.com/intellistream/sage-tutorials)
+- **系统级评测 | System-Level Benchmarking**: [sage-benchmark](https://github.com/intellistream/sage-benchmark), [SAGE](https://github.com/intellistream/SAGE)
+
+### 🔧 详细仓库目录（按功能） | Detailed Catalog (By Domain)
 
 #### 💾 向量数据库 & ANNS | Vector Database & ANNS
 
