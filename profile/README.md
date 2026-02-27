@@ -95,106 +95,126 @@ SAGE 核心框架已拆分为独立发布的分层包，遵循严格的 L1→L2�
 
 *The SAGE core is structured as independently-released layered packages, with strict L1→L2→L3→L4→L5 dependency direction.*
 
+```
+L1  sage-common
+ ↓
+L2  sage-platform
+ ↓
+L3  sage-kernel    sage-libs  (parallel)
+ ↓
+L4  sage-middleware
+ ↓
+L5  sage-cli       sage-dev-tools  (parallel)
+```
+
+#### L1 — 基础层 | Foundation
+
+<table>
+<tr>
+<td width="100%">
+
+#### ⚙️ [sage-common](https://github.com/intellistream/sage-common)
+[![PyPI](https://img.shields.io/pypi/v/isage-common.svg)](https://pypi.org/project/isage-common/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
+
+核心工具、配置管理、日志、协议与嵌入组件，被所有上层包依赖。无任何 SAGE 内部依赖。
+
+*Core utilities, config management, logging, protocols, and embedding components. No SAGE internal dependencies.*
+
+</td>
+</tr>
+</table>
+
+#### L2 — 平台层 | Platform
+
+<table>
+<tr>
+<td width="100%">
+
+#### ⚙️ [sage-platform](https://github.com/intellistream/sage-platform)
+[![PyPI](https://img.shields.io/pypi/v/isage-platform.svg)](https://pypi.org/project/isage-platform/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
+
+队列、存储与服务抽象——SAGE 基础设施的接口层。依赖：L1。
+
+*Queue, storage, and service abstractions for SAGE infrastructure. Depends on: L1.*
+
+</td>
+</tr>
+</table>
+
+#### L3 — 运行时 & 算法库 | Runtime & Algorithm Library
+
 <table>
 <tr>
 <td width="50%">
 
-#### ⚙️ [sage-common](https://github.com/intellistream/sage-common) — L1
-[![PyPI](https://img.shields.io/pypi/v/isage-common.svg)](https://pypi.org/project/isage-common/)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
-
-**基础层 | Foundation Layer**
-
-核心工具、配置管理、日志、协议与嵌入组件，被所有上层包依赖。
-
-*Core utilities, config management, logging, protocols, and embedding components shared across all SAGE packages.*
-
-</td>
-<td width="50%">
-
-#### ⚙️ [sage-platform](https://github.com/intellistream/sage-platform) — L2
-[![PyPI](https://img.shields.io/pypi/v/isage-platform.svg)](https://pypi.org/project/isage-platform/)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
-
-**平台层 | Platform Layer**
-
-队列、存储与服务抽象——SAGE 基础设施的接口层。
-
-*Queue, storage, and service abstractions for SAGE infrastructure.*
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### ⚙️ [sage-kernel](https://github.com/intellistream/sage-kernel) — L3
+#### ⚙️ [sage-kernel](https://github.com/intellistream/sage-kernel)
 [![PyPI](https://img.shields.io/pypi/v/isage-kernel.svg)](https://pypi.org/project/isage-kernel/)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
 
-**内核层 | Kernel Layer**
+流式运行时、调度器、Flow DSL、容错与 RPC 通信；含 C++ 扩展骨架。依赖：L1, L2。
 
-流式运行时、调度器、Flow DSL、容错与 RPC 通信；含 C++ 扩展骨架。
-
-*Streaming runtime, scheduler, Flow DSL, fault tolerance, and RPC; includes C++ extension skeleton.*
+*Streaming runtime, scheduler, Flow DSL, fault tolerance, and RPC. Depends on: L1, L2.*
 
 </td>
 <td width="50%">
 
-#### ⚙️ [sage-libs](https://github.com/intellistream/sage-libs) — L3
+#### ⚙️ [sage-libs](https://github.com/intellistream/sage-libs)
 [![PyPI](https://img.shields.io/pypi/v/isage-libs.svg)](https://pypi.org/project/isage-libs/)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
 
-**算法库层 | Algorithm Library Layer**
+纯算法接口与实现库（智能体、RAG、评估、意图识别等）；不含运行时绑定。依赖：L1。
 
-纯算法接口与实现库（智能体、RAG、评估、意图识别等）；不含运行时绑定。
-
-*Pure algorithm interfaces and implementations (agentic, RAG, eval, intent, etc.); no runtime dependencies.*
+*Pure algorithm interfaces and implementations (agentic, RAG, eval, intent, etc.). Depends on: L1.*
 
 </td>
 </tr>
-<tr>
-<td width="50%">
+</table>
 
-#### ⚙️ [sage-middleware](https://github.com/intellistream/sage-middleware) — L4
+#### L4 — 中间件层 | Middleware
+
+<table>
+<tr>
+<td width="100%">
+
+#### ⚙️ [sage-middleware](https://github.com/intellistream/sage-middleware)
 [![PyPI](https://img.shields.io/pypi/v/isage-middleware.svg)](https://pypi.org/project/isage-middleware/)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
 
-**中间件层 | Middleware Layer**
+面向运行时的服务组件：向量数据库、记忆后端、联网算子。依赖：L1, L2, L3。
 
-面向运行时的服务组件：向量数据库、记忆后端、联网算子。
-
-*Runtime-bound service components: vector DB, memory backends, networked operators.*
-
-</td>
-<td width="50%">
-
-#### ⚙️ [sage-cli](https://github.com/intellistream/sage-cli) — L5
-[![PyPI](https://img.shields.io/pypi/v/isage-cli.svg)](https://pypi.org/project/isage-cli/)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
-
-**命令行接口层 | CLI Layer**
-
-统一命令行接口：应用命令（chat/embedding/gateway）与平台命令（cluster/job/worker）。
-
-*Unified CLI for SAGE: app commands (chat, embedding, gateway) and platform commands (cluster, job, worker).*
+*Runtime-bound service components: vector DB, memory backends, networked operators. Depends on: L1, L2, L3.*
 
 </td>
 </tr>
+</table>
+
+#### L5 — 应用层 | Application
+
+<table>
 <tr>
 <td width="50%">
 
-#### 🔧 [sage-dev-tools](https://github.com/intellistream/sage-dev-tools) — L5
-[![PyPI](https://img.shields.io/pypi/v/isage-dev-tools.svg)](https://pypi.org/project/isage-dev-tools/)
+#### ⚙️ [sage-cli](https://github.com/intellistream/sage-cli)
+[![PyPI](https://img.shields.io/pypi/v/isage-cli.svg)](https://pypi.org/project/isage-cli/)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
 
-**开发工具 | Developer Tools**
+统一命令行接口：应用命令（chat/embedding/gateway）与平台命令（cluster/job/worker）。依赖：L1, L3, L4。
 
-SAGE 开发工具链（`sage-dev` CLI）：代码质量、测试、工作报告、维护工具，合并了原 `sage.tools` L5 层。
-
-*SAGE developer toolchain (`sage-dev` CLI): quality, testing, work-report, and maintenance tools.*
+*Unified CLI for SAGE: app commands and platform commands. Depends on: L1, L3, L4.*
 
 </td>
 <td width="50%">
+
+#### 🔧 [sage-dev-tools](https://github.com/intellistream/sage-dev-tools)
+[![PyPI](https://img.shields.io/pypi/v/isage-dev-tools.svg)](https://pypi.org/project/isage-dev-tools/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
+
+SAGE 开发工具链（`sage-dev` CLI）：代码质量、测试、工作报告、维护工具。依赖：L1, L3, L4, L5。
+
+*SAGE developer toolchain (`sage-dev` CLI): quality, testing, work-report, and maintenance. Depends on: L1, L3, L4, L5.*
+
 </td>
 </tr>
 </table>
