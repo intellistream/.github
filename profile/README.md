@@ -128,7 +128,7 @@ L5  sage-cli        sage-dev-tools   sage-studio
 
 - **Vector DB / ANNS**: [sageVDB](https://github.com/intellistream/sageVDB) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sageVDB?style=flat&logo=github)](https://github.com/intellistream/sageVDB/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-vdb.svg)](https://pypi.org/project/isage-vdb/) [![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/), [sage-anns](https://github.com/intellistream/sage-anns) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-anns?style=flat&logo=github)](https://github.com/intellistream/sage-anns/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-anns.svg)](https://pypi.org/project/isage-anns/), [CANDOR-Bench](https://github.com/intellistream/CANDOR-Bench) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/CANDOR-Bench?style=flat&logo=github)](https://github.com/intellistream/CANDOR-Bench/stargazers)
 - **Stream / TSDB / Memory**: [sageFlow](https://github.com/intellistream/sageFlow) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sageFlow?style=flat&logo=github)](https://github.com/intellistream/sageFlow/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-flow.svg)](https://pypi.org/project/isage-flow/), [sageTSDB](https://github.com/intellistream/sageTSDB) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sageTSDB?style=flat&logo=github)](https://github.com/intellistream/sageTSDB/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-tsdb.svg)](https://pypi.org/project/isage-tsdb/), [neuromem](https://github.com/intellistream/neuromem) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/neuromem?style=flat&logo=github)](https://github.com/intellistream/neuromem/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-neuromem.svg)](https://pypi.org/project/isage-neuromem/)
-- **Benchmarks**: [sage-benchmark](https://github.com/intellistream/sage-benchmark) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-benchmark?style=flat&logo=github)](https://github.com/intellistream/sage-benchmark/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-benchmark.svg)](https://pypi.org/project/isage-benchmark/), [sage-memory-benchmark](https://github.com/intellistream/sage-memory-benchmark) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-memory-benchmark?style=flat&logo=github)](https://github.com/intellistream/sage-memory-benchmark/stargazers), [sage-rag-benchmark](https://github.com/intellistream/sage-rag-benchmark) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-rag-benchmark?style=flat&logo=github)](https://github.com/intellistream/sage-rag-benchmark/stargazers), [sage-refiner-benchmark](https://github.com/intellistream/sage-refiner-benchmark) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-refiner-benchmark?style=flat&logo=github)](https://github.com/intellistream/sage-refiner-benchmark/stargazers)
+- **Benchmarks**: 详见下方 [🔬 研究评测仓库](#-研究评测仓库--research-benchmark-repos) | *See [🔬 Research Benchmark Repos](#-研究评测仓库--research-benchmark-repos) below*
 
 #### L5 — 应用与工具层 | Applications & Tooling
 
@@ -224,7 +224,27 @@ L5  sagellm (integration)   sagellm-benchmark   sagellm-docs   sagellm-website  
 
 ---
 
-## 🚀 其他研究项目 | Other Research Projects
+## � 研究评测仓库 | Research Benchmark Repos
+
+每个评测仓库独立维护，专注于评估对应子系统的性能与正确性。
+
+*Each benchmark repo is independently maintained and focuses on evaluating the corresponding subsystem.*
+
+| 仓库 / Repo | 评测对象 / Evaluates | 说明 / Description |
+|---|---|---|
+| [sage-agentic-tooluse-benchmark](https://github.com/intellistream/sage-agentic-tooluse-benchmark) [![Stars](https://img.shields.io/github/stars/intellistream/sage-agentic-tooluse-benchmark?style=flat&logo=github)](https://github.com/intellistream/sage-agentic-tooluse-benchmark/stargazers) | sage-agentic-tooluse | Agent 工具调用选择算法评测 |
+| [sage-rag-benchmark](https://github.com/intellistream/sage-rag-benchmark) [![Stars](https://img.shields.io/github/stars/intellistream/sage-rag-benchmark?style=flat&logo=github)](https://github.com/intellistream/sage-rag-benchmark/stargazers) | sage-rag | RAG 检索与重排管道评测 |
+| [sage-refiner-benchmark](https://github.com/intellistream/sage-refiner-benchmark) [![Stars](https://img.shields.io/github/stars/intellistream/sage-refiner-benchmark?style=flat&logo=github)](https://github.com/intellistream/sage-refiner-benchmark/stargazers) | sageRefiner | 上下文压缩与精炼算法评测 |
+| [sage-memory-benchmark](https://github.com/intellistream/sage-memory-benchmark) [![Stars](https://img.shields.io/github/stars/intellistream/sage-memory-benchmark?style=flat&logo=github)](https://github.com/intellistream/sage-memory-benchmark/stargazers) | neuromem | 记忆管理与检索性能评测 |
+| [sage-benchmark-agent](https://github.com/intellistream/sage-benchmark-agent) [![Stars](https://img.shields.io/github/stars/intellistream/sage-benchmark-agent?style=flat&logo=github)](https://github.com/intellistream/sage-benchmark-agent/stargazers) | SAGE agent stack | 端到端 Agent 能力综合评测 |
+| [sagellm-control-plane-benchmark](https://github.com/intellistream/sagellm-control-plane-benchmark) [![Stars](https://img.shields.io/github/stars/intellistream/sagellm-control-plane-benchmark?style=flat&logo=github)](https://github.com/intellistream/sagellm-control-plane-benchmark/stargazers) | sagellm-control-plane | LLM 调度控制面算法评测 |
+| [sagellm-benchmark](https://github.com/intellistream/sagellm-benchmark) [![Stars](https://img.shields.io/github/stars/intellistream/sagellm-benchmark?style=flat&logo=github)](https://github.com/intellistream/sagellm-benchmark/stargazers) | sagellm | 端到端 LLM 推理系统评测 |
+| [SAGE-DB-Bench](https://github.com/intellistream/SAGE-DB-Bench) [![Stars](https://img.shields.io/github/stars/intellistream/SAGE-DB-Bench?style=flat&logo=github)](https://github.com/intellistream/SAGE-DB-Bench/stargazers) | sage-anns / sageVDB | 流式 ANN 向量数据库评测 |
+| [LibAMM](https://github.com/intellistream/LibAMM) [![Stars](https://img.shields.io/github/stars/intellistream/LibAMM?style=flat&logo=github)](https://github.com/intellistream/LibAMM/stargazers) | sage-amms | 近似矩阵乘法算法评测 |
+
+---
+
+## �🚀 其他研究项目 | Other Research Projects
 
 ### 流处理系统 | Stream Processing Systems
 
