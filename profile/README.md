@@ -313,19 +313,20 @@ cd SAGE
 
 ```python
 from sage.kernel.api.local_environment import LocalEnvironment
-from sage.libs.io.source import FileSource
-from sage.middleware.operators.rag import DenseRetriever, QAPromptor, OpenAIGenerator
-from sage.libs.io.sink import TerminalSink
+from sage.libs.foundation.io.source import FileSource
+from sage.middleware.operators.llm import SageLLMGenerator
+from sage.libs.foundation.io.sink import TerminalSink
 
 # 创建执行环境 | Create execution environment
 env = LocalEnvironment("rag_pipeline")
 
 # 构建声明式管道 | Build declarative pipeline
 (
-    env.from_source(FileSource, {"file_path": "questions.txt"})
-    .map(DenseRetriever, {"model": "sentence-transformers/all-MiniLM-L6-v2"})
-    .map(QAPromptor, {"template": "Answer based on: {context}\nQ: {query}\nA:"})
-    .map(OpenAIGenerator, {"model": "gpt-3.5-turbo"})
+  env.from_source(FileSource, {"data_path": "questions.txt"})
+  .map(SageLLMGenerator, {
+    "model_path": "Qwen/Qwen2.5-7B-Instruct",
+    "backend_type": "auto",
+  })
     .sink(TerminalSink)
 )
 
