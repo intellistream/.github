@@ -196,59 +196,21 @@ SAGE 开发工具链（质量检查、测试、维护、报告）。
 
 ---
 
-## 🧠 sageLLM 模块化生态 | sageLLM Modular Ecosystem
+## 🧠 vLLM-HUST 生态 | vLLM-HUST Ecosystem
 
-sageLLM 是与 SAGE 协同的独立推理引擎生态，按协议层→核心层→系统层→服务层组织。
+vLLM-HUST 是 IntelliStream 后续重点推进的 LLM 推理研发主线，基于 vLLM 进行增强与工程化扩展。
 
-[sagellm](https://github.com/intellistream/sagellm) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sagellm?style=flat&logo=github)](https://github.com/intellistream/sagellm/stargazers) [![PyPI](https://img.shields.io/pypi/v/isagellm.svg)](https://pypi.org/project/isagellm/)
-- 
-*sageLLM is an independent inference ecosystem collaborating with SAGE, organized from protocol to service layers.*
+*vLLM-HUST is IntelliStream's primary LLM inference development line, built on top of vLLM with engineering-focused extensions.*
+
+- [vllm-hust](https://github.com/intellistream/vllm-hust) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/vllm-hust?style=flat&logo=github)](https://github.com/intellistream/vllm-hust/stargazers)
+- [vllm-hust-workstation](https://github.com/intellistream/vllm-hust-workstation) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/vllm-hust-workstation?style=flat&logo=github)](https://github.com/intellistream/vllm-hust-workstation/stargazers)
+- [vllm-hust-website](https://github.com/intellistream/vllm-hust-website) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/vllm-hust-website?style=flat&logo=github)](https://github.com/intellistream/vllm-hust-website/stargazers)
 
 ```text
-L1  sagellm-protocol
- ↓
-L2  sagellm-core   sagellm-backend   sagellm-comm   sagellm-kv-cache   sagellm-compression
- ↓
-L3  sagellm-control-plane
- ↓
-L4  sagellm-gateway
- ↓
-L5  sagellm (integration)   sagellm-benchmark   sagellm-docs   sagellm-website   sagellm-dev-tools
+vllm-hust (core)
+  ├─ vllm-hust-workstation (product/runtime workspace)
+  └─ vllm-hust-website (public site and docs portal)
 ```
-
-#### L1 — 协议层 | Protocol
-
-#### 🔒 [sagellm-protocol](https://github.com/intellistream/sagellm-protocol)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sagellm-protocol?style=flat&logo=github)](https://github.com/intellistream/sagellm-protocol/stargazers)
-[![PyPI](https://img.shields.io/pypi/v/isagellm-protocol.svg)](https://pypi.org/project/isagellm-protocol/)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
-
-定义 schema、错误码与跨模块协议。
-
-*Schema, error codes, and cross-module protocol definitions.*
-
-#### L2 — 核心能力层 | Core Capabilities
-
-- [sagellm-core](https://github.com/intellistream/sagellm-core) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sagellm-core?style=flat&logo=github)](https://github.com/intellistream/sagellm-core/stargazers) [![PyPI](https://img.shields.io/pypi/v/isagellm-core.svg)](https://pypi.org/project/isagellm-core/)
-- [sagellm-backend](https://github.com/intellistream/sagellm-backend) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sagellm-backend?style=flat&logo=github)](https://github.com/intellistream/sagellm-backend/stargazers) [![PyPI](https://img.shields.io/pypi/v/isagellm-backend.svg)](https://pypi.org/project/isagellm-backend/)
-- [sagellm-comm](https://github.com/intellistream/sagellm-comm) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sagellm-comm?style=flat&logo=github)](https://github.com/intellistream/sagellm-comm/stargazers) [![PyPI](https://img.shields.io/pypi/v/isagellm-comm.svg)](https://pypi.org/project/isagellm-comm/)
-- [sagellm-kv-cache](https://github.com/intellistream/sagellm-kv-cache) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sagellm-kv-cache?style=flat&logo=github)](https://github.com/intellistream/sagellm-kv-cache/stargazers) [![PyPI](https://img.shields.io/pypi/v/isagellm-kv-cache.svg)](https://pypi.org/project/isagellm-kv-cache/)
-- [sagellm-compression](https://github.com/intellistream/sagellm-compression) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sagellm-compression?style=flat&logo=github)](https://github.com/intellistream/sagellm-compression/stargazers) [![PyPI](https://img.shields.io/pypi/v/isagellm-compression.svg)](https://pypi.org/project/isagellm-compression/)
-
-#### L3 — 调度控制层 | Control Plane
-
-- [sagellm-control-plane](https://github.com/intellistream/sagellm-control-plane) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sagellm-control-plane?style=flat&logo=github)](https://github.com/intellistream/sagellm-control-plane/stargazers) [![PyPI](https://img.shields.io/pypi/v/isagellm-control-plane.svg)](https://pypi.org/project/isagellm-control-plane/)
-
-#### L4 — 服务接入层 | Gateway
-
-- [sagellm-gateway](https://github.com/intellistream/sagellm-gateway) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sagellm-gateway?style=flat&logo=github)](https://github.com/intellistream/sagellm-gateway/stargazers) [![PyPI](https://img.shields.io/pypi/v/isagellm-gateway.svg)](https://pypi.org/project/isagellm-gateway/)
-
-#### L5 — 集成与工具层 | Integration & Tooling
-
-- [sagellm-benchmark](https://github.com/intellistream/sagellm-benchmark) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sagellm-benchmark?style=flat&logo=github)](https://github.com/intellistream/sagellm-benchmark/stargazers) [![PyPI](https://img.shields.io/pypi/v/isagellm-benchmark.svg)](https://pypi.org/project/isagellm-benchmark/)
-- [sagellm-docs](https://github.com/intellistream/sagellm-docs) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sagellm-docs?style=flat&logo=github)](https://github.com/intellistream/sagellm-docs/stargazers)
-- [sagellm-website](https://github.com/intellistream/sagellm-website) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sagellm-website?style=flat&logo=github)](https://github.com/intellistream/sagellm-website/stargazers)
-- [sagellm-dev-tools](https://github.com/intellistream/sagellm-dev-tools) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sagellm-dev-tools?style=flat&logo=github)](https://github.com/intellistream/sagellm-dev-tools/stargazers) [![PyPI](https://img.shields.io/pypi/v/isagellm-dev-tools.svg)](https://pypi.org/project/isagellm-dev-tools/)
 
 ---
 
@@ -264,8 +226,6 @@ L5  sagellm (integration)   sagellm-benchmark   sagellm-docs   sagellm-website  
 | [sage-rag-benchmark](https://github.com/intellistream/sage-rag-benchmark) [![Stars](https://img.shields.io/github/stars/intellistream/sage-rag-benchmark?style=flat&logo=github)](https://github.com/intellistream/sage-rag-benchmark/stargazers) | sage-rag | RAG 检索与重排管道评测 |
 | [sage-refiner-benchmark](https://github.com/intellistream/sage-refiner-benchmark) [![Stars](https://img.shields.io/github/stars/intellistream/sage-refiner-benchmark?style=flat&logo=github)](https://github.com/intellistream/sage-refiner-benchmark/stargazers) | sageRefiner | 上下文压缩与精炼算法评测 |
 | [sage-memory-benchmark](https://github.com/intellistream/sage-memory-benchmark) [![Stars](https://img.shields.io/github/stars/intellistream/sage-memory-benchmark?style=flat&logo=github)](https://github.com/intellistream/sage-memory-benchmark/stargazers) | neuromem | 记忆管理与检索性能评测 |
-| [sagellm-control-plane-benchmark](https://github.com/intellistream/sagellm-control-plane-benchmark) [![Stars](https://img.shields.io/github/stars/intellistream/sagellm-control-plane-benchmark?style=flat&logo=github)](https://github.com/intellistream/sagellm-control-plane-benchmark/stargazers) | sagellm-control-plane | LLM 调度控制面算法评测 |
-| [sagellm-benchmark](https://github.com/intellistream/sagellm-benchmark) [![Stars](https://img.shields.io/github/stars/intellistream/sagellm-benchmark?style=flat&logo=github)](https://github.com/intellistream/sagellm-benchmark/stargazers) | sagellm | 端到端 LLM 推理系统评测 |
 | [SAGE-DB-Bench](https://github.com/intellistream/SAGE-DB-Bench) [![Stars](https://img.shields.io/github/stars/intellistream/SAGE-DB-Bench?style=flat&logo=github)](https://github.com/intellistream/SAGE-DB-Bench/stargazers) | sage-anns / sageVDB | 流式 ANN 向量数据库评测 |
 | [LibAMM](https://github.com/intellistream/LibAMM) [![Stars](https://img.shields.io/github/stars/intellistream/LibAMM?style=flat&logo=github)](https://github.com/intellistream/LibAMM/stargazers) | sage-amms | 近似矩阵乘法算法评测 |
 
