@@ -20,12 +20,11 @@
 SAGE (Streaming-Augmented Generative Execution) 是 IntelliStream 面向 AI 数据处理与推理流水线的主框架。
 当前核心代码已经重新收敛到一个主仓库中，围绕统一的 L1→L5 分层架构组织开发、测试与发布。
 
-*SAGE is IntelliStream's primary framework for AI data processing and inference pipelines. The core codebase has been consolidated back into a single main repository organized around a unified L1→L5 layered architecture.*
+*SAGE is IntelliStream's primary framework for AI data processing and inference pipelines, organized as a single main repository with a unified L1→L5 layered architecture.*
 
 [SAGE](https://github.com/intellistream/SAGE) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/SAGE?style=flat&logo=github)](https://github.com/intellistream/SAGE/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage.svg)](https://pypi.org/project/isage/)
 
 - **Monorepo packages**: `sage`, `sage-common`, `sage-platform`, `sage-kernel`, `sage-libs`, `sage-middleware`, `sage-cli`, `sage-tools`
-- **Repository cleanup status**: former standalone core repos (`sage-common`, `sage-platform`, `sage-kernel`, `sage-libs`, `sage-middleware`, `sage-cli`, `sage-tools`) have been removed after consolidation into `intellistream/SAGE`
 - **In-tree benchmarking**: benchmark configs, experiment scripts, and evaluation assets now live alongside the main repo
 - **Public docs**: maintained in [SAGE-Pub](https://github.com/intellistream/SAGE-Pub)
 
@@ -43,7 +42,7 @@ L4  sage-middleware
 L5  sage-cli        sage-tools
 ```
 
-### 核心主仓库（已完成仓库回流）| Core Monorepo (Consolidated)
+### 核心主仓库 | Core Monorepo
 
 | 层级 / Layer | 组件 / Components | 作用 / Role |
 |---|---|---|
@@ -69,7 +68,7 @@ L5  sage-cli        sage-tools
 | [sage-studio](https://github.com/intellistream/sage-studio) | 可视化工作流与交互式体验入口 |
 | [sage-edge](https://github.com/intellistream/sage-edge) | 边缘部署与聚合网关 |
 
-> 说明：公共 profile 仅保留对外可见且仍建议独立使用的配套仓库；内部团队仓库和已回流到 SAGE 主仓库的子仓库（包括已删除的历史独立仓库）不再单独展示。
+> 说明：公共 profile 仅保留对外可见且仍建议独立使用的配套仓库；内部团队仓库不在此处展示。
 
 ---
 
