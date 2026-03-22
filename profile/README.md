@@ -17,182 +17,59 @@
 
 ## 🌟 SAGE 项目生态系统 | SAGE Project Ecosystem
 
-SAGE (Streaming-Augmented Generative Execution) 是一个高性能、模块化的 AI 推理框架生态系统，通过数据流抽象实现透明、可扩展的 LLM 驱动系统。
+SAGE (Streaming-Augmented Generative Execution) 是 IntelliStream 面向 AI 数据处理与推理流水线的主框架。
+当前核心代码已经重新收敛到一个主仓库中，围绕统一的 L1→L5 分层架构组织开发、测试与发布。
 
-*SAGE is a high-performance, modular AI inference framework ecosystem that enables transparent, scalable LLM-powered systems through dataflow abstractions.*
+*SAGE is IntelliStream's primary framework for AI data processing and inference pipelines. The core codebase has been consolidated back into a single main repository organized around a unified L1→L5 layered architecture.*
 
 [SAGE](https://github.com/intellistream/SAGE) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/SAGE?style=flat&logo=github)](https://github.com/intellistream/SAGE/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage.svg)](https://pypi.org/project/isage/)
 
-- **Benchmarks**: 详见下方 [🔬 研究评测仓库](#-研究评测仓库--research-benchmark-repos) | *See [🔬 Research Benchmark Repos](#-研究评测仓库--research-benchmark-repos) below*
+- **Monorepo packages**: `sage`, `sage-common`, `sage-platform`, `sage-kernel`, `sage-libs`, `sage-middleware`, `sage-cli`, `sage-tools`
+- **Repository cleanup status**: former standalone core repos (`sage-common`, `sage-platform`, `sage-kernel`, `sage-libs`, `sage-middleware`, `sage-cli`, `sage-tools`) have been removed after consolidation into `intellistream/SAGE`
+- **In-tree benchmarking**: benchmark configs, experiment scripts, and evaluation assets now live alongside the main repo
+- **Public docs**: maintained in [SAGE-Pub](https://github.com/intellistream/SAGE-Pub)
+
 ### 🏗️ SAGE 分层架构（L1→L5）| SAGE Layered Architecture
 
 ```text
 L1  sage-common
  ↓
-L2  sage-platform   sageFlownet
+L2  sage-platform
  ↓
 L3  sage-kernel     sage-libs
  ↓
 L4  sage-middleware
  ↓
-L5  sage-cli        sage-dev-tools   sage-studio
+L5  sage-cli        sage-tools
 ```
 
-#### L1 — 基础层 | Foundation
+### 核心主仓库（已完成仓库回流）| Core Monorepo (Consolidated)
 
-#### ⚙️ [sage-common](https://github.com/intellistream/sage-common)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-common?style=flat&logo=github)](https://github.com/intellistream/sage-common/stargazers)
-[![PyPI](https://img.shields.io/pypi/v/isage-common.svg)](https://pypi.org/project/isage-common/)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
+| 层级 / Layer | 组件 / Components | 作用 / Role |
+|---|---|---|
+| L1 | `sage-common` | 配置、日志、协议、公共工具 |
+| L2 | `sage-platform` | 队列、存储、服务与运行基础设施抽象 |
+| L3 | `sage-kernel`, `sage-libs` | 流式运行时、调度、算法与数据处理能力 |
+| L4 | `sage-middleware` | 向量库、记忆系统、网络算子与运行时绑定组件 |
+| L5 | `sage-cli`, `sage-tools` | CLI、开发工作流、质量检查与维护工具 |
 
-提供配置、日志、协议、通用组件等底座能力，是整个 SAGE 生态的依赖起点。
+附加内容：
 
-*Provides foundational config, logging, protocol, and shared components used by all upper layers.*
+- `benchmark/`：主仓库内维护的评测配置、实验脚本和结果资产
+- `packages/sage/`：聚合安装入口与统一发布包
 
-#### L2 — 平台层 | Platform
+### 配套仓库 | Companion Repositories
 
-<table>
-<tr>
-<td width="50%">
+这些仓库仍然独立维护，但围绕主 SAGE 仓库协同工作：
 
-#### ⚙️ [sage-platform](https://github.com/intellistream/sage-platform)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-platform?style=flat&logo=github)](https://github.com/intellistream/sage-platform/stargazers)
-[![PyPI](https://img.shields.io/pypi/v/isage-platform.svg)](https://pypi.org/project/isage-platform/)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
+| 仓库 / Repo | 用途 / Purpose |
+|---|---|
+| [SAGE-Pub](https://github.com/intellistream/SAGE-Pub) | 公共文档、网站与发布文档源 |
+| [wheelwright](https://github.com/intellistream/wheelwright) | 通用 Python 包发布工具 |
+| [sage-studio](https://github.com/intellistream/sage-studio) | 可视化工作流与交互式体验入口 |
+| [sage-edge](https://github.com/intellistream/sage-edge) | 边缘部署与聚合网关 |
 
-队列、存储、服务抽象与运行基础设施接口层。
-
-*Queue/storage/service abstractions as platform interfaces for runtime infrastructure.*
-
-</td>
-<td width="50%">
-
-#### 🔗 [sageFlownet](https://github.com/intellistream/sageFlownet)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sageFlownet?style=flat&logo=github)](https://github.com/intellistream/sageFlownet/stargazers)
-[![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/)
-
-分布式通信与执行底座，作为上层运行时的重要平台能力。
-
-*Distributed communication/runtime substrate serving as a platform capability for upper layers.*
-
-</td>
-</tr>
-</table>
-
-#### L3 — 运行时与算法层 | Runtime & Algorithm
-
-<table>
-<tr>
-<td width="50%">
-
-#### ⚙️ [sage-kernel](https://github.com/intellistream/sage-kernel)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-kernel?style=flat&logo=github)](https://github.com/intellistream/sage-kernel/stargazers)
-[![PyPI](https://img.shields.io/pypi/v/isage-kernel.svg)](https://pypi.org/project/isage-kernel/)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
-
-流式运行时、调度器、Flow DSL、容错与 RPC。
-
-*Streaming runtime, scheduler, Flow DSL, fault tolerance, and RPC.*
-
-</td>
-<td width="50%">
-
-#### ⚙️ [sage-libs](https://github.com/intellistream/sage-libs)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-libs?style=flat&logo=github)](https://github.com/intellistream/sage-libs/stargazers)
-[![PyPI](https://img.shields.io/pypi/v/isage-libs.svg)](https://pypi.org/project/isage-libs/)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
-
-算法接口与实现集合（Agentic / RAG / Eval / Intent）。
-
-*Algorithm interfaces and implementations (Agentic / RAG / Eval / Intent).* 
-
-</td>
-</tr>
-</table>
-
-##### L3 子仓库（按功能）| L3 Satellite Repos (By Function)
-
-- **Agentic / ToolUse**: 
-  - [sage-agentic](https://github.com/intellistream/sage-agentic) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-agentic?style=flat&logo=github)](https://github.com/intellistream/sage-agentic/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-agentic.svg)](https://pypi.org/project/isage-agentic/), 
-  - [sage-agentic-tooluse](https://github.com/intellistream/sage-agentic-tooluse) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-agentic-tooluse?style=flat&logo=github)](https://github.com/intellistream/sage-agentic-tooluse/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-agentic.svg)](https://pypi.org/project/isage-agentic-tooluse/), 
-  - [sage-agentic-tooluse-sias](https://github.com/intellistream/sage-agentic-tooluse-sias) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-agentic-tooluse-sias?style=flat&logo=github)](https://github.com/intellistream/sage-agentic-tooluse-sias/stargazers)[![PyPI](https://img.shields.io/pypi/v/isage-agentic.svg)](https://pypi.org/project/isage-agentic-tooluse-sias/), 
-
-- **RAG / Refiner / Data**: 
-  - [sage-rag](https://github.com/intellistream/sage-rag) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-rag?style=flat&logo=github)](https://github.com/intellistream/sage-rag/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-rag.svg)](https://pypi.org/project/isage-rag/), 
-  - [sageRefiner](https://github.com/intellistream/sageRefiner) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sageRefiner?style=flat&logo=github)](https://github.com/intellistream/sageRefiner/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-refiner.svg)](https://pypi.org/project/isage-refiner/), 
-  - [sageData](https://github.com/intellistream/sageData) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sageData?style=flat&logo=github)](https://github.com/intellistream/sageData/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-data.svg)](https://pypi.org/project/isage-data/)
-- **Eval / Intent / Safety**: 
-  - [sage-eval](https://github.com/intellistream/sage-eval) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-eval?style=flat&logo=github)](https://github.com/intellistream/sage-eval/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-eval.svg)](https://pypi.org/project/isage-eval/), 
-  - [sage-intent](https://github.com/intellistream/sage-intent) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-intent?style=flat&logo=github)](https://github.com/intellistream/sage-intent/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-intent.svg)](https://pypi.org/project/isage-intent/), 
-  - [sage-safety](https://github.com/intellistream/sage-safety) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-safety?style=flat&logo=github)](https://github.com/intellistream/sage-safety/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-safety.svg)](https://pypi.org/project/isage-safety/), 
-  - [sage-privacy](https://github.com/intellistream/sage-privacy) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-privacy?style=flat&logo=github)](https://github.com/intellistream/sage-privacy/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-privacy.svg)](https://pypi.org/project/isage-privacy/)
-
-#### L4 — 中间件层 | Middleware
-
-#### ⚙️ [sage-middleware](https://github.com/intellistream/sage-middleware)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-middleware?style=flat&logo=github)](https://github.com/intellistream/sage-middleware/stargazers)
-[![PyPI](https://img.shields.io/pypi/v/isage-middleware.svg)](https://pypi.org/project/isage-middleware/)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
-
-运行时服务组件层：向量数据库、记忆后端、联网算子等。
-
-*Runtime-bound service layer: vector DB, memory backends, and networked operators.*
-
-##### L4 子仓库（按功能）| L4 Satellite Repos (By Function)
-
-- **Vector DB / ANNS**: 
-  - [sageVDB](https://github.com/intellistream/sageVDB) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sageVDB?style=flat&logo=github)](https://github.com/intellistream/sageVDB/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-vdb.svg)](https://pypi.org/project/isage-vdb/) [![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/), 
-  - [sage-anns](https://github.com/intellistream/sage-anns) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-anns?style=flat&logo=github)](https://github.com/intellistream/sage-anns/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-anns.svg)](https://pypi.org/project/isage-anns/), 
-  - [CANDOR-Bench](https://github.com/intellistream/CANDOR-Bench) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/CANDOR-Bench?style=flat&logo=github)](https://github.com/intellistream/CANDOR-Bench/stargazers)
-- **Stream / TSDB / Memory**:
-  - [sageFlow](https://github.com/intellistream/sageFlow) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sageFlow?style=flat&logo=github)](https://github.com/intellistream/sageFlow/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-flow.svg)](https://pypi.org/project/isage-flow/), 
-  - [sageTSDB](https://github.com/intellistream/sageTSDB) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sageTSDB?style=flat&logo=github)](https://github.com/intellistream/sageTSDB/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-tsdb.svg)](https://pypi.org/project/isage-tsdb/), 
-  - [neuromem](https://github.com/intellistream/neuromem) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/neuromem?style=flat&logo=github)](https://github.com/intellistream/neuromem/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-neuromem.svg)](https://pypi.org/project/isage-neuromem/)
-
-#### L5 — 应用与工具层 | Applications & Tooling
-
-<table>
-<tr>
-<td width="50%">
-
-#### ⚙️ [sage-cli](https://github.com/intellistream/sage-cli)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-cli?style=flat&logo=github)](https://github.com/intellistream/sage-cli/stargazers)
-[![PyPI](https://img.shields.io/pypi/v/isage-cli.svg)](https://pypi.org/project/isage-cli/)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
-
-统一命令行入口，连接平台能力与应用场景。
-
-*Unified CLI entrypoint connecting platform capabilities and app scenarios.*
-
-</td>
-<td width="50%">
-
-#### 🔧 [sage-dev-tools](https://github.com/intellistream/sage-dev-tools)
-[![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-dev-tools?style=flat&logo=github)](https://github.com/intellistream/sage-dev-tools/stargazers)
-[![PyPI](https://img.shields.io/pypi/v/isage-dev-tools.svg)](https://pypi.org/project/isage-dev-tools/)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
-
-SAGE 开发工具链（质量检查、测试、维护、报告）。
-
-*SAGE developer tooling for quality, testing, maintenance, and reports.*
-
-</td>
-</tr>
-</table>
-
-##### L5 子仓库（按功能）| L5 Satellite Repos (By Function)
-
-- **应用体验与入口**: 
-  - [sage-studio](https://github.com/intellistream/sage-studio) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-studio?style=flat&logo=github)](https://github.com/intellistream/sage-studio/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-studio.svg)](https://pypi.org/project/isage-studio/), 
-  -  [sage-edge](https://github.com/intellistream/sage-edge) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-edge?style=flat&logo=github)](https://github.com/intellistream/sage-edge/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-edge.svg)](https://pypi.org/project/isage-edge/)
-- **开发与发布工具**: 
-  - [sage-pypi-publisher](https://github.com/intellistream/sage-pypi-publisher) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-pypi-publisher?style=flat&logo=github)](https://github.com/intellistream/sage-pypi-publisher/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage-pypi-publisher.svg)](https://pypi.org/project/isage-pypi-publisher/), 
-  - [sage-github-manager](https://github.com/intellistream/sage-github-manager) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-github-manager?style=flat&logo=github)](https://github.com/intellistream/sage-github-manager/stargazers), 
-  - [sage-team-info](https://github.com/intellistream/sage-team-info) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-team-info?style=flat&logo=github)](https://github.com/intellistream/sage-team-info/stargazers)
-- **文档与学习资源**: 
-  - [sage-docs](https://github.com/intellistream/sage-docs) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-docs?style=flat&logo=github)](https://github.com/intellistream/sage-docs/stargazers), 
-  - [sage-examples](https://github.com/intellistream/sage-examples) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-examples?style=flat&logo=github)](https://github.com/intellistream/sage-examples/stargazers), 
-  - [sage-tutorials](https://github.com/intellistream/sage-tutorials) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/sage-tutorials?style=flat&logo=github)](https://github.com/intellistream/sage-tutorials/stargazers)
+> 说明：公共 profile 仅保留对外可见且仍建议独立使用的配套仓库；内部团队仓库和已回流到 SAGE 主仓库的子仓库（包括已删除的历史独立仓库）不再单独展示。
 
 ---
 
