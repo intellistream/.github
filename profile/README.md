@@ -15,6 +15,22 @@
 
 ---
 
+## Official Entry Points | 官方入口
+
+为减少入口分散，当前对外统一为三类入口：
+
+- [sage.org.ai](https://sage.org.ai/): SAGE 产品首页与文档主入口
+- [intellistream.github.io](https://intellistream.github.io): IntelliStream 组织/实验室门户
+- [github.com/intellistream](https://github.com/intellistream): 团队 GitHub Profile，与代码、Issue、发布和仓库入口
+
+建议使用方式：
+
+- 想了解或使用 SAGE：先看 `sage.org.ai`
+- 想了解团队与项目全景：看 `intellistream.github.io`
+- 想找源码、仓库和贡献入口：看 GitHub Profile
+
+---
+
 ## SAGE First | SAGE 主线
 
 [SAGE](https://github.com/intellistream/SAGE) [![GitHub Stars](https://img.shields.io/github/stars/intellistream/SAGE?style=flat&logo=github)](https://github.com/intellistream/SAGE/stargazers) [![PyPI](https://img.shields.io/pypi/v/isage.svg)](https://pypi.org/project/isage/)
@@ -99,7 +115,7 @@ sage chat --ask "Hello, SAGE!"
 文档入口：
 
 - [SAGE-Docs repository](https://github.com/intellistream/SAGE-Docs)
-- [SAGE Documentation site](https://intellistream.github.io/sage-docs/)
+- [SAGE Documentation site](https://sage.org.ai/)
 
 ---
 
