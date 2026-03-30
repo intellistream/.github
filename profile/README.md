@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[![Website](https://img.shields.io/badge/Website-intellistream.github.io-blue?style=flat&logo=github)](https://intellistream.github.io)
+[![Website](https://img.shields.io/badge/Website-lab.sage.org.ai-blue?style=flat&logo=github)](https://lab.sage.org.ai)
 [![GitHub Organization](https://img.shields.io/badge/GitHub-intellistream-181717?style=flat&logo=github)](https://github.com/intellistream)
 
 **面向流处理、推理系统与智能数据基础设施的开源研究团队**
@@ -20,13 +20,13 @@
 为减少入口分散，当前对外统一为三类入口：
 
 - [sage.org.ai](https://sage.org.ai/): SAGE 产品首页与文档主入口
-- [intellistream.github.io](https://intellistream.github.io): IntelliStream 组织/实验室门户
+- [lab.sage.org.ai](https://lab.sage.org.ai): IntelliStream 组织/实验室门户
 - [github.com/intellistream](https://github.com/intellistream): 团队 GitHub Profile，与代码、Issue、发布和仓库入口
 
 建议使用方式：
 
 - 想了解或使用 SAGE：先看 `sage.org.ai`
-- 想了解团队与项目全景：看 `intellistream.github.io`
+- 想了解团队与项目全景：看 `lab.sage.org.ai`
 - 想找源码、仓库和贡献入口：看 GitHub Profile
 
 ---
