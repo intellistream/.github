@@ -5,6 +5,7 @@
 <div align="center">
 
 [![Website](https://img.shields.io/badge/Website-sage.org.ai-blue?style=flat&logo=github)](https://sage.org.ai)
+[![Lab](https://img.shields.io/badge/Lab-lab.sage.org.ai-0aa8a7?style=flat&logo=googlechrome)](https://lab.sage.org.ai)
 [![GitHub Organization](https://img.shields.io/badge/GitHub-intellistream-181717?style=flat&logo=github)](https://github.com/intellistream)
 
 **面向流处理、推理系统与智能数据基础设施的开源研究团队**
@@ -17,15 +18,17 @@
 
 ## Official Entry Points | 官方入口
 
-为减少入口分散，当前对外统一为两类入口：
+为减少入口分散，当前对外统一为三类入口：
 
 - [sage.org.ai](https://sage.org.ai/): SAGE 产品首页与文档主入口
+- [lab.sage.org.ai](https://lab.sage.org.ai): IntelliStream 团队与研究门户
 - [github.com/intellistream](https://github.com/intellistream): 团队 GitHub Profile，与代码、Issue、发布和仓库入口
 
 建议使用方式：
 
 - 想了解或使用 SAGE：先看 `sage.org.ai`
-- 想了解团队与项目全景，或查代码、仓库和贡献入口：看 GitHub Profile
+- 想了解团队与项目全景：看 `lab.sage.org.ai`
+- 想找源码、仓库和贡献入口：看 GitHub Profile
 
 ---
 
@@ -133,7 +136,7 @@ sage chat --ask "Hello, SAGE!"
 ## Contact | 联系方式
 
 - Email: [shuhao_zhang at hust.edu.cn](mailto:shuhao_zhang@hust.edu.cn)
-- Website: [intellistream.github.io](https://intellistream.github.io)
+- Website: [lab.sage.org.ai](https://lab.sage.org.ai)
 
 ---
 
