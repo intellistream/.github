@@ -26,11 +26,13 @@ These organizations form a layered ecosystem. They do not map one-to-one to indi
 
 ### DataSys
 
-- [MorphStream](https://github.com/DataSysResearch/MorphStream) - transactional stream-processing engine.
+- [DataSys project directory](https://github.com/DataSysResearch) - 15 graduated public data-system repositories.
+- Flagships: [MorphStream](https://github.com/DataSysResearch/MorphStream), [CANDOR-Bench](https://github.com/DataSysResearch/CANDOR-Bench), [GRACE](https://github.com/DataSysResearch/GRACE), and [Sesame](https://github.com/DataSysResearch/Sesame).
 
 ### SAGE
 
-SAGE core, documentation, agent, RAG, evaluation, studio, tutorial, and application repositories are graduating to [SAGE-Research](https://github.com/SAGE-Research) one repository at a time.
+- [SAGE project directory](https://github.com/SAGE-Research) - 25 graduated public application and orchestration repositories.
+- Core entry points: [SAGE](https://github.com/SAGE-Research/SAGE), [SAGE Docs](https://github.com/SAGE-Research/SAGE-Docs), [SAGE Agentic](https://github.com/SAGE-Research/sage-agentic), [SAGE RAG](https://github.com/SAGE-Research/sage-rag), [SAGE Eval](https://github.com/SAGE-Research/sage-eval), [SAGE Studio](https://github.com/SAGE-Research/sage-studio), and [SAGE Tutorials](https://github.com/SAGE-Research/sage-tutorials).
 
 ### vLLM-HUST
 
