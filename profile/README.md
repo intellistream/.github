@@ -14,15 +14,17 @@ IntelliStream research incubator
     RIDE Lab          DataSys            vLLM-HUST
  agent-native         data systems       inference runtime and
  systems research                         hardware execution
-        |
-        v
-      SAGE
- flagship product
+        \                |                 /
+         +---------------+----------------+
+                         v
+                       SAGE
+              shared flagship product
 ```
 
-- [RIDE Lab](https://github.com/RIDE-Lab) conducts agent-native systems research. Its flagship product [SAGE](https://github.com/RIDE-Lab/SAGE) owns agent programming, RAG, workflow, evaluation, and service orchestration; [Sage Mate](https://github.com/RIDE-Lab/sage-mate) is an application built with SAGE.
+- [RIDE Lab](https://github.com/RIDE-Lab) conducts agent-native systems research and stewards the core repositories of [SAGE](https://github.com/RIDE-Lab/SAGE).
 - [DataSys](https://github.com/DataSysResearch) owns framework-neutral stream, graph, vector/index, online-update, query, lifecycle, and benchmark systems.
 - [vLLM-HUST](https://github.com/vLLM-HUST) is the independent inference substrate and owns model runtime, KV/cache scheduling, compilation, kernels, and hardware execution.
+- **SAGE — Streaming-Augmented Generative Execution — is the ecosystem's shared flagship product.** It applies streaming-computing principles to LLM inference and agent execution; [Sage Mate](https://github.com/RIDE-Lab/sage-mate) is an application built with SAGE.
 
 These organizations collaborate across distinct technical boundaries. RIDE Lab research systems and products call vLLM-HUST; RIDE is not a runtime layer above it. IntelliStream spans the ecosystem as an incubator rather than acting as another runtime layer.
 
@@ -33,9 +35,9 @@ These organizations collaborate across distinct technical boundaries. RIDE Lab r
 - [DataSys project directory](https://github.com/DataSysResearch) - 15 graduated public data-system repositories.
 - Flagships: [MorphStream](https://github.com/DataSysResearch/MorphStream), [CANDOR-Bench](https://github.com/DataSysResearch/CANDOR-Bench), [GRACE](https://github.com/DataSysResearch/GRACE), and [Sesame](https://github.com/DataSysResearch/Sesame).
 
-### RIDE Lab and SAGE
+### RIDE Lab and SAGE Core Stewardship
 
-- [RIDE Lab project directory](https://github.com/RIDE-Lab) - agent-native systems research, products, applications, and benchmarks built on vLLM-HUST.
+- [RIDE Lab project directory](https://github.com/RIDE-Lab) - agent-native systems research plus the operational home of the shared SAGE core series.
 - Product entry points: [SAGE](https://github.com/RIDE-Lab/SAGE), [SAGE Docs](https://github.com/RIDE-Lab/SAGE-Docs), [SAGE Agentic](https://github.com/RIDE-Lab/sage-agentic), [SAGE RAG](https://github.com/RIDE-Lab/sage-rag), [SAGE Eval](https://github.com/RIDE-Lab/sage-eval), [SAGE Studio](https://github.com/RIDE-Lab/sage-studio), and [SAGE Tutorials](https://github.com/RIDE-Lab/sage-tutorials).
 - Application: [Sage Mate](https://github.com/RIDE-Lab/sage-mate).
 
