@@ -11,16 +11,20 @@ IntelliStream research incubator
         | mature projects graduate
         +----------------+-------------------+
         v                v                   v
-      SAGE            DataSys            vLLM-HUST
- application and      data systems       inference runtime and
- orchestration                            hardware execution
+    RIDE Lab          DataSys            vLLM-HUST
+ agent-native         data systems       inference runtime and
+ systems research                         hardware execution
+        |
+        v
+      SAGE
+ flagship product
 ```
 
-- [SAGE](https://github.com/SAGE-Research) owns agent, RAG, workflow, evaluation, studio, tutorial, and service-orchestration systems.
+- [RIDE Lab](https://github.com/RIDE-Lab) conducts agent-native systems research. Its flagship product [SAGE](https://github.com/RIDE-Lab/SAGE) owns agent programming, RAG, workflow, evaluation, and service orchestration; [Sage Mate](https://github.com/RIDE-Lab/sage-mate) is an application built with SAGE.
 - [DataSys](https://github.com/DataSysResearch) owns framework-neutral stream, graph, vector/index, online-update, query, lifecycle, and benchmark systems.
-- [vLLM-HUST](https://github.com/vllm-hust) owns model runtime, KV/cache scheduling, compilation, kernels, and hardware execution.
+- [vLLM-HUST](https://github.com/vLLM-HUST) is the independent inference substrate and owns model runtime, KV/cache scheduling, compilation, kernels, and hardware execution.
 
-These organizations form a layered ecosystem. They do not map one-to-one to individual research directions, and IntelliStream spans all layers as an incubator rather than acting as a fourth runtime layer.
+These organizations collaborate across distinct technical boundaries. RIDE Lab research systems and products call vLLM-HUST; RIDE is not a runtime layer above it. IntelliStream spans the ecosystem as an incubator rather than acting as another runtime layer.
 
 ## Graduated Projects
 
@@ -29,14 +33,15 @@ These organizations form a layered ecosystem. They do not map one-to-one to indi
 - [DataSys project directory](https://github.com/DataSysResearch) - 15 graduated public data-system repositories.
 - Flagships: [MorphStream](https://github.com/DataSysResearch/MorphStream), [CANDOR-Bench](https://github.com/DataSysResearch/CANDOR-Bench), [GRACE](https://github.com/DataSysResearch/GRACE), and [Sesame](https://github.com/DataSysResearch/Sesame).
 
-### SAGE
+### RIDE Lab and SAGE
 
-- [SAGE project directory](https://github.com/SAGE-Research) - 25 graduated public application and orchestration repositories.
-- Core entry points: [SAGE](https://github.com/SAGE-Research/SAGE), [SAGE Docs](https://github.com/SAGE-Research/SAGE-Docs), [SAGE Agentic](https://github.com/SAGE-Research/sage-agentic), [SAGE RAG](https://github.com/SAGE-Research/sage-rag), [SAGE Eval](https://github.com/SAGE-Research/sage-eval), [SAGE Studio](https://github.com/SAGE-Research/sage-studio), and [SAGE Tutorials](https://github.com/SAGE-Research/sage-tutorials).
+- [RIDE Lab project directory](https://github.com/RIDE-Lab) - agent-native systems research, products, applications, and benchmarks built on vLLM-HUST.
+- Product entry points: [SAGE](https://github.com/RIDE-Lab/SAGE), [SAGE Docs](https://github.com/RIDE-Lab/SAGE-Docs), [SAGE Agentic](https://github.com/RIDE-Lab/sage-agentic), [SAGE RAG](https://github.com/RIDE-Lab/sage-rag), [SAGE Eval](https://github.com/RIDE-Lab/sage-eval), [SAGE Studio](https://github.com/RIDE-Lab/sage-studio), and [SAGE Tutorials](https://github.com/RIDE-Lab/sage-tutorials).
+- Application: [Sage Mate](https://github.com/RIDE-Lab/sage-mate).
 
 ### vLLM-HUST
 
-Model-runtime, cache-scheduling, compiler, kernel, and hardware-execution projects graduate to [vLLM-HUST](https://github.com/vllm-hust) after maintainer review.
+Model-runtime, cache-scheduling, compiler, kernel, and hardware-execution projects graduate to [vLLM-HUST](https://github.com/vLLM-HUST) after maintainer review.
 
 ## Graduation Policy
 
@@ -54,6 +59,7 @@ Private, unpublished, or collaborator-sensitive repositories require confidentia
 ## Official Entry Points
 
 - [sage.org.ai](https://sage.org.ai/) - SAGE product and public documentation.
+- [ride-lab.github.io](https://ride-lab.github.io/) - RIDE Lab research organization and portfolio.
 - [lab.sage.org.ai](https://lab.sage.org.ai/) - IntelliStream team and research portal.
 - [github.com/intellistream](https://github.com/intellistream) - active incubator projects and migration redirects.
 
